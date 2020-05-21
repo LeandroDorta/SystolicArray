@@ -1,0 +1,220 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sun May 17 22:48:36 2020
+# Process ID: 133471
+# Current directory: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel
+# Command line: vivado
+# Log file: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado.log
+# Journal file: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ld443/workspace/sys_array_debug/vivado_rtl_kernel/SysArray_ex/SysArray_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/SysArray_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/SysArray_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/SysArray_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'SysArray_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/SysArray_ex.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L axi_vip_v1_1_6 -L xilinx_vip -prj SysArray_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/SysArray_ex.sim/sim_1/behav/xsim'
+xelab -wto feada27a88744d7babec2f42097b2fa2 --incr --debug typical --relax --mt 8 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_6 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SysArray_tb_behav xil_defaultlib.SysArray_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto feada27a88744d7babec2f42097b2fa2 --incr --debug typical --relax --mt 8 -L axi_infrastructure_v1_1_0 -L xil_defaultlib -L axi_vip_v1_1_6 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot SysArray_tb_behav xil_defaultlib.SysArray_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/SysArray_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SysArray_tb_behav -key {Behavioral:sim_1:Functional:SysArray_tb} -tclbatch {SysArray_tb.tcl} -view {/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/waveform.wcfg} -log {simulate.log} -sv_seed 1"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/waveform.wcfg
+source SysArray_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+XilinxAXIVIP: Found at Path: SysArray_tb.inst_control_SysArray_vip.inst
+XilinxAXIVIP: Found at Path: SysArray_tb.inst_slv_m00_axi_vip.inst
+XilinxAXIVIP: Found at Path: SysArray_tb.inst_slv_m01_axi_vip.inst
+XilinxAXIVIP: Found at Path: SysArray_tb.inst_slv_m02_axi_vip.inst
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. SysArray_tb.inst_dut.systolic_array.input_matrix_AXI_Read.gen_fifo.inst_rd_xpm_fifo_sync.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /SysArray_tb/inst_dut/systolic_array/input_matrix_AXI_Read/gen_fifo.inst_rd_xpm_fifo_sync/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial290_284  File: /wrk/2019.sub/2019.2.1/continuous/2019_12_05_2729669/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. SysArray_tb.inst_dut.systolic_array.weight_matrix_AXI_Read.gen_fifo.inst_rd_xpm_fifo_sync.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc
+Time: 1 ps  Iteration: 0  Process: /SysArray_tb/inst_dut/systolic_array/weight_matrix_AXI_Read/gen_fifo.inst_rd_xpm_fifo_sync/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial290_284  File: /wrk/2019.sub/2019.2.1/continuous/2019_12_05_2729669/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+///////////////////////////////////////////////////////////////////////////
+Control Master: ctrl
+///////////////////////////////////////////////////////////////////////////
+Starting Memory slave: m00_axi
+///////////////////////////////////////////////////////////////////////////
+Starting Memory slave: m01_axi
+///////////////////////////////////////////////////////////////////////////
+Starting Memory slave: m02_axi
+200 ns : Checking post reset values of scalar registers
+202 ns : Read register for addr: 0x10 request sent
+214 ns : Read register for addr: 0x10 response received
+214 ns : Read_register addr: 0x10, value: 0x0
+Blocking write register addr: 0x10, value: 0xffffffff
+Blocking write successfully done addr: 0x10, value: 0xffffffff
+306 ns : Read register for addr: 0x10 request sent
+318 ns : Read register for addr: 0x10 response received
+318 ns : Read_register addr: 0x10, value: 0xffffffff
+318 ns : Read register for addr: 0x18 request sent
+330 ns : Read register for addr: 0x18 response received
+330 ns : Read_register addr: 0x18, value: 0x0
+Blocking write register addr: 0x18, value: 0xffffffff
+Blocking write successfully done addr: 0x18, value: 0xffffffff
+386 ns : Read register for addr: 0x18 request sent
+398 ns : Read register for addr: 0x18 response received
+398 ns : Read_register addr: 0x18, value: 0xffffffff
+398 ns : Checking post reset values of pointer registers
+398 ns : Read register for addr: 0x20 request sent
+410 ns : Read register for addr: 0x20 response received
+410 ns : Read_register addr: 0x20, value: 0x0
+Blocking write register addr: 0x20, value: 0xffffffff
+Blocking write successfully done addr: 0x20, value: 0xffffffff
+478 ns : Read register for addr: 0x20 request sent
+490 ns : Read register for addr: 0x20 response received
+490 ns : Read_register addr: 0x20, value: 0xffffffff
+490 ns : Read register for addr: 0x24 request sent
+502 ns : Read register for addr: 0x24 response received
+502 ns : Read_register addr: 0x24, value: 0x0
+Blocking write register addr: 0x24, value: 0xffffffff
+Blocking write successfully done addr: 0x24, value: 0xffffffff
+574 ns : Read register for addr: 0x24 request sent
+586 ns : Read register for addr: 0x24 response received
+586 ns : Read_register addr: 0x24, value: 0xffffffff
+586 ns : Read register for addr: 0x2c request sent
+598 ns : Read register for addr: 0x2c response received
+598 ns : Read_register addr: 0x2c, value: 0x0
+Blocking write register addr: 0x2c, value: 0xffffffff
+Blocking write successfully done addr: 0x2c, value: 0xffffffff
+658 ns : Read register for addr: 0x2c request sent
+670 ns : Read register for addr: 0x2c response received
+670 ns : Read_register addr: 0x2c, value: 0xffffffff
+670 ns : Read register for addr: 0x30 request sent
+682 ns : Read register for addr: 0x30 response received
+682 ns : Read_register addr: 0x30, value: 0x0
+Blocking write register addr: 0x30, value: 0xffffffff
+Blocking write successfully done addr: 0x30, value: 0xffffffff
+754 ns : Read register for addr: 0x30 request sent
+766 ns : Read register for addr: 0x30 response received
+766 ns : Read_register addr: 0x30, value: 0xffffffff
+766 ns : Read register for addr: 0x38 request sent
+778 ns : Read register for addr: 0x38 response received
+778 ns : Read_register addr: 0x38, value: 0x0
+Blocking write register addr: 0x38, value: 0xffffffff
+Blocking write successfully done addr: 0x38, value: 0xffffffff
+854 ns : Read register for addr: 0x38 request sent
+866 ns : Read register for addr: 0x38 response received
+866 ns : Read_register addr: 0x38, value: 0xffffffff
+866 ns : Read register for addr: 0x3c request sent
+878 ns : Read register for addr: 0x3c response received
+878 ns : Read_register addr: 0x3c, value: 0x0
+Blocking write register addr: 0x3c, value: 0xffffffff
+Blocking write successfully done addr: 0x3c, value: 0xffffffff
+922 ns : Read register for addr: 0x3c request sent
+934 ns : Read register for addr: 0x3c response received
+934 ns : Read_register addr: 0x3c, value: 0xffffffff
+Starting: Enabling Interrupts....
+Non-Blocking write register addr: 0x4, value: 0x1
+Non-Blocking write register addr: 0x8, value: 0x1
+Finished: Interrupts enabled.
+Starting: multiple_iteration
+Starting iteration:          1 /          1
+934 ns - Applying slv_no_backpressure_wready
+934 ns - Applying slv_no_delay_rvalid
+934 ns : Setting Scalar Registers registers
+Non-Blocking write register addr: 0x10, value: 0xffffffff
+Non-Blocking write register addr: 0x18, value: 0xffffffff
+Non-Blocking write register addr: 0x20, value: 0xd7df2000
+Non-Blocking write register addr: 0x24, value: 0xa9cc3d4f
+Non-Blocking write register addr: 0x2c, value: 0xd9fa4000
+Non-Blocking write register addr: 0x30, value: 0x372e8788
+Non-Blocking write register addr: 0x38, value: 0xb1393000
+Non-Blocking write register addr: 0x3c, value: 0x969a5488
+M00_axi backdoor_memory_write_4byte done
+M01_axi backdoor_memory_write_4byte done
+M02_axi backdoor_memory_write_4byte done
+934 ns : Read register for addr: 0x0 request sent
+946 ns : Read register for addr: 0x0 response received
+946 ns : Read_register addr: 0x0, value: 0x4
+Poll idle register done
+Blocking write register addr: 0x0, value: 0x1
+Blocking write successfully done addr: 0x0, value: 0x1
+Blocking write reg with CTRL_START_MASK
+Wait drivers idle done
+Right before service_interrupts
+Starting Servicing interrupts....
+5722 ns : Read register for addr: 0x0 request sent
+5734 ns : Read register for addr: 0x0 response received
+5734 ns : Read_register addr: 0x0, value: 0x6
+Control Register: 0x6
+Blocking write register addr: 0x0, value: 0x6
+Blocking write successfully done addr: 0x0, value: 0x6
+5814 ns : Read register for addr: 0xc request sent
+5826 ns : Read register for addr: 0xc response received
+5826 ns : Read_register addr: 0xc, value: 0x1
+Interrupt Status Register: 0x1
+Blocking write register addr: 0xc, value: 0x1
+Blocking write successfully done addr: 0xc, value: 0x1
+Finished Servicing interrupts
+Right after service_interrupts
+Finished iteration:          1 /          1
+Test completed successfully
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+$finish called at time : 5914 ns : File "/wrk/2019.sub/2019.2.1/continuous/2019_12_05_2729669/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3126
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2019.sub/2019.2.1/continuous/2019_12_05_2729669/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv: file does not exist.
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 7455.988 ; gain = 397.969 ; free physical = 172693 ; free virtual = 233927
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SysArray_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 7455.988 ; gain = 397.969 ; free physical = 172691 ; free virtual = 233925
+current_wave_config {waveform.wcfg}
+waveform.wcfg
+add_wave {{/SysArray_tb/m00_axi_araddr}} 
+save_wave_config {/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/waveform.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 18 12:32:31 2020...

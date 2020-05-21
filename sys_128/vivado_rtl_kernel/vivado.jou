@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Sun May 17 22:48:36 2020
+# Process ID: 133471
+# Current directory: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel
+# Command line: vivado
+# Log file: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado.log
+# Journal file: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ld443/workspace/sys_array_debug/vivado_rtl_kernel/SysArray_ex/SysArray_ex.xpr
+open_project /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/SysArray_ex.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/waveform.wcfg
+source SysArray_tb.tcl
+current_wave_config {waveform.wcfg}
+add_wave {{/SysArray_tb/m00_axi_araddr}} 
+save_wave_config {/home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/SysArray_ex/waveform.wcfg}
+close_sim

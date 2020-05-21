@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="sys_128" location="/home/ld443/workspace_debug/sys_128" platform="/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm" platformUID="xilinx:u250:xdma:201830.2" systemProject="sys_128_system" sysConfig="config0_0" cpu="x86_0" os="linux">
+  <configuration name="Emulation-SW" id="com.xilinx.accelerated.config.sw_emu.270599988" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true"/>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.accelerated.config.hw_emu.1708529251" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu"/>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.accelerated.config.hw.1092453716" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw"/>
+  </configuration>
+</openclProject:OpenCLProject>

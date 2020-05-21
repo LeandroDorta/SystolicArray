@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Tue May 12 14:11:02 2020
+# Process ID: 34305
+# Current directory: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel
+# Command line: vivado -mode batch -source /tmp/prj15702681567295056331.tmp -notrace
+# Log file: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado.log
+# Journal file: /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado.jou
+#-----------------------------------------------------------
+source /tmp/prj15702681567295056331.tmp -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+create_ip -name rtl_kernel_wizard -vendor xilinx.com -library ip -version 1.0 -module_name SysArray
+create_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 7018.086 ; gain = 0.016 ; free physical = 186989 ; free virtual = 242249
+set_property -dict [list CONFIG.Component_Name {SysArray} CONFIG.KERNEL_NAME {SysArray} CONFIG.NUM_INPUT_ARGS {2} CONFIG.NUM_M_AXI {3} CONFIG.M00_AXI_DATA_NUM_BYTES {16} CONFIG.M00_AXI_ARG00_NAME {input_matrix} CONFIG.M01_AXI_DATA_NUM_BYTES {16} CONFIG.M01_AXI_ARG00_NAME {weight_matrix} CONFIG.M02_AXI_DATA_NUM_BYTES {16} CONFIG.M02_AXI_ARG00_NAME {output_matrix}] [get_ips SysArray]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'SysArray' to 'SysArray' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/SysArray/SysArray.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SysArray'...
+set_property generate_synth_checkpoint false [get_files /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/SysArray/SysArray.xci]
+generate_target all [get_files /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/SysArray/SysArray.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SysArray'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'SysArray'...
+export_ip_user_files -of_objects [get_files /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel/vivado_rtl_kernel.srcs/sources_1/ip/SysArray/SysArray.xci] -no_script -sync -force -quiet
+start_gui
+open_example_project -force -dir /home/ld443/workspace_debug/sys_128/vivado_rtl_kernel [get_ips SysArray]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'SysArray'...
+open_example_project: Time (s): cpu = 00:00:03 ; elapsed = 00:01:38 . Memory (MB): peak = 7021.047 ; gain = 2.961 ; free physical = 185515 ; free virtual = 240806
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 12 14:15:18 2020...
