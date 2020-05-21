@@ -8,11 +8,11 @@ module SysArray #(
   parameter integer C_S_AXI_CONTROL_ADDR_WIDTH = 12 ,
   parameter integer C_S_AXI_CONTROL_DATA_WIDTH = 32 ,
   parameter integer C_M00_AXI_ADDR_WIDTH       = 64 ,
-  parameter integer C_M00_AXI_DATA_WIDTH       = 512,
+  parameter integer C_M00_AXI_DATA_WIDTH       = 256,
   parameter integer C_M01_AXI_ADDR_WIDTH       = 64 ,
-  parameter integer C_M01_AXI_DATA_WIDTH       = 512,
+  parameter integer C_M01_AXI_DATA_WIDTH       = 256,
   parameter integer C_M02_AXI_ADDR_WIDTH       = 64,
-  parameter integer C_M02_AXI_DATA_WIDTH       = 512
+  parameter integer C_M02_AXI_DATA_WIDTH       = 256
 )
 (
   // System Signals

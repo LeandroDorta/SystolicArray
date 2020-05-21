@@ -5,11 +5,11 @@
 
 module Top_wrapper #(
   parameter integer C_M00_AXI_ADDR_WIDTH = 64 ,
-  parameter integer C_M00_AXI_DATA_WIDTH = 512,
+  parameter integer C_M00_AXI_DATA_WIDTH = 256,
   parameter integer C_M01_AXI_ADDR_WIDTH = 64 ,
-  parameter integer C_M01_AXI_DATA_WIDTH = 512,
+  parameter integer C_M01_AXI_DATA_WIDTH = 256,
   parameter integer C_M02_AXI_ADDR_WIDTH = 64,
-  parameter integer C_M02_AXI_DATA_WIDTH = 512
+  parameter integer C_M02_AXI_DATA_WIDTH = 256
 )
 (
   // System Signals
@@ -85,24 +85,7 @@ module Top_wrapper #(
   output wire                              ap_ready       ,
   input  wire [64-1:0]                     input_matrix   ,
   input  wire [64-1:0]                     weight_matrix  ,
-  input  wire [64-1:0]                     output_matrix  ,
-  output wire                              all_weights_avail_w,
-  output logic                             input_matrix_tvalid,
-  output logic                             input_matrix_tready,
-  output logic [C_M00_AXI_DATA_WIDTH-1:0]  input_matrix_tdata,
-  output logic                             input_matrix_tlast,
-  output logic                             weight_matrix_tvalid,
-  output logic                             weight_matrix_tready,
-  output logic                             weight_matrix_tlast,
-  output logic [C_M01_AXI_DATA_WIDTH-1:0]  weight_matrix_tdata,
-  output logic                             output_matrix_tvalid,
-  output logic                             output_matrix_tready,
-  output logic                             output_matrix_tlast,
-  output logic [C_M02_AXI_DATA_WIDTH-1:0]  output_matrix_tdata,
-  output logic                             weight_done,
-  output logic                             reading_done,
-  output logic                             write_done, 
-  output logic [4-1:0]                     matrix_row_rdy_o                                                                     
+  input  wire [64-1:0]                     output_matrix                                                                   
 );
 
 
@@ -117,12 +100,12 @@ localparam integer  LP_DEFAULT_LENGTH_IN_BYTES = 16384;
 localparam integer  LP_NUM_EXAMPLES    = 2;
 
 // Large enough for interesting traffic.
-localparam integer MATRIX_W_ROWS = 16;
-localparam integer MATRIX_W_COLS = 16;
-localparam integer MATRIX_I_ROWS = 16;
-localparam integer MATRIX_I_COLS = 16;
-localparam integer MATRIX_O_ROWS = 16;
-localparam integer MATRIX_O_COLS = 16;
+localparam integer MATRIX_W_ROWS = 8;
+localparam integer MATRIX_W_COLS = 8;
+localparam integer MATRIX_I_ROWS = 8;
+localparam integer MATRIX_I_COLS = 8;
+localparam integer MATRIX_O_ROWS = 8;
+localparam integer MATRIX_O_COLS = 8;
 ///////////////////////////////////////////////////////////////////////////////
 // Wires and Variables
 ///////////////////////////////////////////////////////////////////////////////
@@ -169,7 +152,24 @@ logic                                weight_out_col_en[MATRIX_W_COLS-1:0];
 logic                                weight_out_col_rdy[MATRIX_W_COLS-1:0];
 logic [32-1:0]                       weight_out_col_msg[MATRIX_W_COLS-1:0];
 logic                                all_weights_avail;  
-logic                                all_weights_avail_r;                       
+logic                                all_weights_avail_r;       
+
+logic                             all_weights_avail_w;
+logic                             input_matrix_tvalid;
+logic                             input_matrix_tready;
+logic [C_M00_AXI_DATA_WIDTH-1:0]  input_matrix_tdata;
+logic                             input_matrix_tlast;
+logic                             weight_matrix_tvalid;
+logic                             weight_matrix_tready;
+logic                             weight_matrix_tlast;
+logic [C_M01_AXI_DATA_WIDTH-1:0]  weight_matrix_tdata;
+logic                             output_matrix_tvalid;
+logic                             output_matrix_tready;
+logic                             output_matrix_tlast;
+logic [C_M02_AXI_DATA_WIDTH-1:0]  output_matrix_tdata;
+logic                             weight_done;
+logic                             reading_done;
+logic                             write_done; 
 ///////////////////////////////////////////////////////////////////////////////
 // Begin RTL
 ///////////////////////////////////////////////////////////////////////////////
