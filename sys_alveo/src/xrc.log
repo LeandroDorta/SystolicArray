@@ -1,0 +1,42 @@
+Sat May  9 12:27:26 2020: Server was asked to start on port: '34335'
+Sat May  9 12:27:26 2020: Server is using token UUID: 'a9b85e43-7a2f-4b00-b306-64d6a5d641c6'
+Sat May  9 12:27:26 2020: Attempting to start server on port '34335'
+Sat May  9 12:27:26 2020: XRC main fifo: created main fifo '/tmp/xrcmaina9b85e43-7a2f-4b00-b306-64d6a5d641c6', fd read = 11
+Sat May  9 12:27:26 2020: Running Rule Check Server
+Sat May  9 12:27:26 2020: Version 1.5.1
+Sat May  9 12:27:27 2020: Rule Check Server: Accepted socket connection from client
+Sat May  9 12:27:27 2020: EXCHANGE_TOKEN received, server token: a9b85e43-7a2f-4b00-b306-64d6a5d641c6, passed token: a9b85e43-7a2f-4b00-b306-64d6a5d641c6
+Sat May  9 12:29:47 2020: SESSION_MGR: creating session with session uuid: '002dc513-b055-4b74-b19b-25e9c8aa096d' and name 'Emulation-SW'
+Sat May  9 12:29:47 2020: SESSION_MGR: closing session for UUID '002dc513-b055-4b74-b19b-25e9c8aa096d' with name 'Emulation-SW'
+Sat May  9 12:29:47 2020: SESSION_MGR: creating session with session uuid: 'c1383762-9c42-4ea2-91f7-a6526054890e' and name 'Emulation-HW'
+Sat May  9 12:29:47 2020: SESSION_MGR: closing session for UUID 'c1383762-9c42-4ea2-91f7-a6526054890e' with name 'Emulation-HW'
+Sat May  9 12:29:47 2020: SESSION_MGR: creating session with session uuid: '4c84430e-d0f9-4134-af9f-297e853363b1' and name 'Hardware'
+Sat May  9 12:29:47 2020: SESSION_MGR: closing session for UUID '4c84430e-d0f9-4134-af9f-297e853363b1' with name 'Hardware'
+Sat May  9 14:40:02 2020: SESSION_MGR: creating session with session uuid: 'b02235e7-f62b-4b3a-892c-6e3a1d66726c' and name 'Emulation-SW'
+Sat May  9 14:40:02 2020: SESSION_MGR: closing session for UUID 'b02235e7-f62b-4b3a-892c-6e3a1d66726c' with name 'Emulation-SW'
+Sat May  9 14:40:02 2020: SESSION_MGR: creating session with session uuid: '717f36cf-fe10-4eef-b25a-5741d3c0d246' and name 'Emulation-HW'
+Sat May  9 14:40:02 2020: SESSION_MGR: closing session for UUID '717f36cf-fe10-4eef-b25a-5741d3c0d246' with name 'Emulation-HW'
+Sat May  9 14:40:02 2020: SESSION_MGR: creating session with session uuid: '5edb9608-b490-4189-9cce-af8eb4c04197' and name 'Hardware'
+Sat May  9 14:40:02 2020: SESSION_MGR: closing session for UUID '5edb9608-b490-4189-9cce-af8eb4c04197' with name 'Hardware'
+Sat May  9 16:28:28 2020: SESSION_MGR: creating session with session uuid: '12e00e1c-e083-46d9-afd5-ca4b57c92e56' and name 'Emulation-SW'
+Sat May  9 16:28:28 2020: SESSION_MGR: closing session for UUID '12e00e1c-e083-46d9-afd5-ca4b57c92e56' with name 'Emulation-SW'
+Sat May  9 16:28:28 2020: SESSION_MGR: creating session with session uuid: '8b0c26d5-d736-4b78-a67b-df54a69c5fd6' and name 'Emulation-HW'
+Sat May  9 16:28:28 2020: SESSION_MGR: closing session for UUID '8b0c26d5-d736-4b78-a67b-df54a69c5fd6' with name 'Emulation-HW'
+Sat May  9 16:28:28 2020: SESSION_MGR: creating session with session uuid: '17008f2e-19aa-4e69-9345-6d56f969de04' and name 'Hardware'
+Sat May  9 16:28:28 2020: SESSION_MGR: closing session for UUID '17008f2e-19aa-4e69-9345-6d56f969de04' with name 'Hardware'
+Sat May  9 19:27:41 2020: SESSION_MGR: creating session with session uuid: '59192c48-cb02-4382-98f2-d335b84c93cd' and name 'Emulation-SW'
+Sat May  9 19:27:41 2020: SESSION_MGR: closing session for UUID '59192c48-cb02-4382-98f2-d335b84c93cd' with name 'Emulation-SW'
+Sat May  9 19:27:41 2020: SESSION_MGR: creating session with session uuid: '73a3edbb-233d-4c75-b763-c2d454d7890d' and name 'Emulation-HW'
+Sat May  9 19:27:41 2020: SESSION_MGR: closing session for UUID '73a3edbb-233d-4c75-b763-c2d454d7890d' with name 'Emulation-HW'
+Sat May  9 19:27:41 2020: SESSION_MGR: creating session with session uuid: '0746a2f6-61d0-47b7-a5f9-4a60ce72135b' and name 'Hardware'
+Sat May  9 19:27:41 2020: SESSION_MGR: closing session for UUID '0746a2f6-61d0-47b7-a5f9-4a60ce72135b' with name 'Hardware'
+Sat May  9 19:56:30 2020: SESSION_MGR: creating session with session uuid: '55aeeabb-3835-4080-9e3c-bf4a58574f79' and name 'Emulation-SW'
+Sat May  9 19:56:31 2020: SESSION_MGR: closing session for UUID '55aeeabb-3835-4080-9e3c-bf4a58574f79' with name 'Emulation-SW'
+Sat May  9 19:56:31 2020: SESSION_MGR: creating session with session uuid: '2ca92a1e-4a1b-422e-87f6-d8f03bd1b170' and name 'Emulation-HW'
+Sat May  9 19:56:31 2020: SESSION_MGR: closing session for UUID '2ca92a1e-4a1b-422e-87f6-d8f03bd1b170' with name 'Emulation-HW'
+Sat May  9 19:56:31 2020: SESSION_MGR: creating session with session uuid: '6bbb817b-501d-49ca-8e7f-a6fe21bb3619' and name 'Hardware'
+Sat May  9 19:56:31 2020: SESSION_MGR: closing session for UUID '6bbb817b-501d-49ca-8e7f-a6fe21bb3619' with name 'Hardware'
+Sun May 10 21:48:16 2020: STOP_SERVER received, server token: a9b85e43-7a2f-4b00-b306-64d6a5d641c6, passed token: a9b85e43-7a2f-4b00-b306-64d6a5d641c6
+Sun May 10 21:48:16 2020: Socket received request to stop server.
+Sun May 10 21:48:16 2020: SERVER: destructor for server bound to port 34335
+Sun May 10 21:48:16 2020: XRC main fifo: Good unlink of /tmp/xrcmaina9b85e43-7a2f-4b00-b306-64d6a5d641c6

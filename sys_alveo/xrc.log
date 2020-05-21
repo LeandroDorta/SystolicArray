@@ -1,0 +1,13 @@
+Sun May 17 14:51:58 2020: Server was asked to start on port: '37560'
+Sun May 17 14:51:58 2020: Server is using token UUID: '438e1650-c05b-4db3-85b9-90a429a75fb9'
+Sun May 17 14:51:58 2020: Attempting to start server on port '37560'
+Sun May 17 14:51:58 2020: XRC main fifo: created main fifo '/tmp/xrcmain438e1650-c05b-4db3-85b9-90a429a75fb9', fd read = 12
+Sun May 17 14:51:58 2020: Running Rule Check Server
+Sun May 17 14:51:58 2020: Version 1.5.1
+Sun May 17 14:51:58 2020: Rule Check Server: Accepted socket connection from client
+Sun May 17 14:51:58 2020: EXCHANGE_TOKEN received, server token: 438e1650-c05b-4db3-85b9-90a429a75fb9, passed token: 438e1650-c05b-4db3-85b9-90a429a75fb9
+Sun May 17 14:51:58 2020: SESSION_MGR: creating session with session uuid: '48faf09d-5af6-4d21-bf32-b34c1b495621' and name 'v++_link_SysArray.hw.xilinx_u250_xdma_201830_2'
+Sun May 17 14:52:12 2020: Rule Check Server: Accepted socket connection from client
+Sun May 17 14:53:41 2020: Rule Check Server: Accepted socket connection from client
+Sun May 17 15:45:39 2020: Rule Check Server: Accepted socket connection from client
+Sun May 17 17:46:40 2020: SESSION_MGR: closing session for UUID '48faf09d-5af6-4d21-bf32-b34c1b495621' with name 'v++_link_SysArray.hw.xilinx_u250_xdma_201830_2'

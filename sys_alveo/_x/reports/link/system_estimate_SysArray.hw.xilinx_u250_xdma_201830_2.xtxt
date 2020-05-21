@@ -1,0 +1,36 @@
+===============================================================================
+Version:    v++ v2019.2.1 (64-bit)
+Build:      SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Sun May 17 17:46:33 2020
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             SysArray.hw.xilinx_u250_xdma_201830_2
+Target Device:           xilinx:u250:xdma:201830.2
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library                         Compute Units
+-----------  ----  ------------------  -------------------------------------  -------------
+SysArray     ip_c  fpga0:OCL_REGION_0  SysArray.hw.xilinx_u250_xdma_201830_2  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     SysArray.hw.xilinx_u250_xdma_201830_2
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name  Target Frequency  Estimated Frequency
+------------  -----------  -----------  ----------------  -------------------
+
+Latency Information
+Compute Unit  Kernel Name  Module Name  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -----------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+
+Area Information
+Compute Unit  Kernel Name  Module Name  FF  LUT  DSP  BRAM  URAM
+------------  -----------  -----------  --  ---  ---  ----  ----
+-------------------------------------------------------------------------------

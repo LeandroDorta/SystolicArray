@@ -1,0 +1,17 @@
+Sun May 17 14:51:56 2020: Server was asked to start on port: '45585'
+Sun May 17 14:51:56 2020: Server is using token UUID: 'cc5de0f1-f6d8-4d37-b49c-b705eb758826'
+Sun May 17 14:51:56 2020: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sun May 17 14:51:56 2020: Attempting to start server on port '45585'
+Sun May 17 14:51:56 2020: XCD main fifo: created main fifo '/tmp/xcdmaincc5de0f1-f6d8-4d37-b49c-b705eb758826', fd read = 12
+Sun May 17 14:51:56 2020: Running Dispatch Server
+Sun May 17 14:51:56 2020: Version 1.0.1
+Sun May 17 14:51:57 2020: Dispatch Server: Accepted socket connection from client
+Sun May 17 14:51:57 2020: EXCHANGE_TOKEN received, server token: cc5de0f1-f6d8-4d37-b49c-b705eb758826, passed token: cc5de0f1-f6d8-4d37-b49c-b705eb758826
+Sun May 17 14:51:57 2020: SESSION_MGR: creating session with session uuid: '07855c5b-e314-4810-8a1c-020f3e69c4cc' and name 'v++_link_SysArray.hw.xilinx_u250_xdma_201830_2'
+Sun May 17 14:52:32 2020: Dispatch Server: Accepted socket connection from client
+Sun May 17 14:52:35 2020: Dispatch Server: Accepted socket connection from client
+Sun May 17 15:57:20 2020: Dispatch Server: Accepted socket connection from client
+Sun May 17 16:48:07 2020: Dispatch Server: Accepted socket connection from client
+Sun May 17 17:29:08 2020: Dispatch Server: Accepted socket connection from client
+Sun May 17 17:46:32 2020: Dispatch Server: Accepted socket connection from client
+Sun May 17 17:46:41 2020: SESSION_MGR: closing session for UUID '07855c5b-e314-4810-8a1c-020f3e69c4cc' with name 'v++_link_SysArray.hw.xilinx_u250_xdma_201830_2'

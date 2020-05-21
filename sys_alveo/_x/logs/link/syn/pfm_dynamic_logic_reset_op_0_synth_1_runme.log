@@ -1,0 +1,340 @@
+
+*** Running vivado
+    with args -log pfm_dynamic_logic_reset_op_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic_logic_reset_op_0.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic_logic_reset_op_0.tcl -notrace
+[OPTRACE]|56367|1|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743421056|START|pfm_dynamic_logic_reset_op_0_synth_1|ROLLUP_AUTO
+[OPTRACE]|56367|2|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743421060|START|Creating in-memory project|
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/sys_alveo/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4:pcie4_gt_if:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4:pcie4_gt_if_rtl:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if_rtl.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom_rtl:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom_rtl:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom_rtl.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:Monitor_AXI_Master:1.0'. The one found in IP location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/monitor_axi_master_v1_0' will take precedence over the same IP in location /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/monitor_axi_master_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie4_uscale_plus:1.3'. The one found in IP location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xdma:4.1'. The one found in IP location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_control:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_external_msix:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_mgmt:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_external:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_internal:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_pm:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_status:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_gt_if:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pcie_id:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pl:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_rbar:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:dsc_bypass:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/dsc_bypass.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/dsc_bypass.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_7x_transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_7x_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_7x_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_ext_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/axi_pcie3_v3_0/interfaces/pcie3_us_ext_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:pcie3_us_gt_if:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie3_ultrascale_v4_4/interfaces/pcie3_us_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:int_shared_logic:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_int_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_int_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_us_transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie4_us_plus_transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_us_plus_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie4_us_plus_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_cfg_external_msix:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_debug_ports:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_debug_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_debug_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_status_ports:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_status_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_status_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:sdsoc_trace:2.0'. The one found in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/interfaces/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.699 ; gain = 190.789 ; free physical = 173488 ; free virtual = 230249
+[OPTRACE]|56367|3|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743434655|END|Creating in-memory project|
+[OPTRACE]|56367|4|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743434656|START|Adding files|
+[OPTRACE]|56367|5|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743435212|END|Adding files|
+[OPTRACE]|56367|6|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743435213|START|Configure IP Cache|
+[OPTRACE]|56367|7|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743435215|END|Configure IP Cache|
+[OPTRACE]|56367|8|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743435217|START|synth_design|
+Command: synth_design -top pfm_dynamic_logic_reset_op_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 58172 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2907.531 ; gain = 183.609 ; free physical = 166668 ; free virtual = 223462
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_logic_reset_op_0' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_logic_reset_op_0/synth/pfm_dynamic_logic_reset_op_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' (1#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_logic_reset_op_0' (2#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_logic_reset_op_0/synth/pfm_dynamic_logic_reset_op_0.v:57]
+WARNING: [Synth 8-3331] design util_vector_logic_v2_0_1_util_vector_logic has unconnected port Op2[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2974.262 ; gain = 250.340 ; free physical = 166622 ; free virtual = 223393
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2977.223 ; gain = 253.301 ; free physical = 166604 ; free virtual = 223374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2977.223 ; gain = 253.301 ; free physical = 166604 ; free virtual = 223374
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2977.223 ; gain = 0.000 ; free physical = 166597 ; free virtual = 223367
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3015.992 ; gain = 0.000 ; free physical = 166120 ; free virtual = 222902
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3027.902 ; gain = 11.910 ; free physical = 166079 ; free virtual = 222861
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 3027.906 ; gain = 303.984 ; free physical = 165801 ; free virtual = 222597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 3027.906 ; gain = 303.984 ; free physical = 165794 ; free virtual = 222590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 3027.906 ; gain = 303.984 ; free physical = 165786 ; free virtual = 222581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 3027.914 ; gain = 303.992 ; free physical = 165738 ; free virtual = 222535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 3027.914 ; gain = 303.992 ; free physical = 165736 ; free virtual = 222536
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:02:13 . Memory (MB): peak = 3453.469 ; gain = 729.547 ; free physical = 164954 ; free virtual = 221974
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:02:13 . Memory (MB): peak = 3453.469 ; gain = 729.547 ; free physical = 164950 ; free virtual = 221970
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:02:13 . Memory (MB): peak = 3463.477 ; gain = 739.555 ; free physical = 164949 ; free virtual = 221969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.355 ; gain = 753.434 ; free physical = 164812 ; free virtual = 221832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.355 ; gain = 753.434 ; free physical = 164812 ; free virtual = 221832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.355 ; gain = 753.434 ; free physical = 164812 ; free virtual = 221832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.355 ; gain = 753.434 ; free physical = 164812 ; free virtual = 221832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.355 ; gain = 753.434 ; free physical = 164812 ; free virtual = 221832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.355 ; gain = 753.434 ; free physical = 164812 ; free virtual = 221832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.355 ; gain = 753.434 ; free physical = 164812 ; free virtual = 221832
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:02:07 . Memory (MB): peak = 3477.355 ; gain = 702.750 ; free physical = 164839 ; free virtual = 221859
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:02:17 . Memory (MB): peak = 3477.359 ; gain = 753.434 ; free physical = 164839 ; free virtual = 221859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3487.262 ; gain = 0.000 ; free physical = 165247 ; free virtual = 222266
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3556.926 ; gain = 0.000 ; free physical = 164916 ; free virtual = 221936
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:03:19 . Memory (MB): peak = 3556.926 ; gain = 1752.227 ; free physical = 164962 ; free virtual = 221982
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+[OPTRACE]|56367|9|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743634007|END|synth_design|
+[OPTRACE]|56367|10|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743634008|START|Write IP Cache|
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3556.926 ; gain = 0.000 ; free physical = 164938 ; free virtual = 221958
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pfm_dynamic_logic_reset_op_0, cache-ID = a9f64ad337ce8899
+[OPTRACE]|56367|11|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743635464|END|Write IP Cache|
+[OPTRACE]|56367|12|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743635464|START|write_checkpoint|CHECKPOINT
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3556.934 ; gain = 0.000 ; free physical = 164667 ; free virtual = 221687
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.dcp' has been generated.
+[OPTRACE]|56367|13|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743635844|END|write_checkpoint|
+[OPTRACE]|56367|14|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743635844|START|synth_report|REPORT
+INFO: [runtcl-4] Executing : report_utilization -file pfm_dynamic_logic_reset_op_0_utilization_synth.rpt -pb pfm_dynamic_logic_reset_op_0_utilization_synth.pb
+[OPTRACE]|56367|15|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743636306|END|synth_report|
+[OPTRACE]|56367|16|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_logic_reset_op_0_synth_1/pfm_dynamic_logic_reset_op_0.tcl|vivado_synth|1589743637087|END|pfm_dynamic_logic_reset_op_0_synth_1|
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 15:27:17 2020...

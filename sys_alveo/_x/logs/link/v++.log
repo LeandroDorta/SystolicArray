@@ -1,0 +1,338 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/ld443/sys_alveo/_x/reports/link
+	Log files: /home/ld443/sys_alveo/_x/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/ld443/sys_alveo/xclbin/SysArray.hw.xilinx_u250_xdma_201830_2.xclbin.link_summary, at Sun May 17 14:51:57 2020
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun May 17 14:51:57 2020
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/ld443/sys_alveo/_x/reports/link/v++_link_SysArray.hw.xilinx_u250_xdma_201830_2_guidance.html', at Sun May 17 14:51:58 2020
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm
+INFO: [v++ 60-1578]   This platform contains Device Support Archive '/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/hw/xilinx_u250_xdma_201830_2.dsa'
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u250_xdma_201830_2
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [14:52:09] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/ld443/sys_alveo/SysArray.xo --xpfm /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --target hw --output_dir /home/ld443/sys_alveo/_x/link/int --temp_dir /home/ld443/sys_alveo/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/ld443/sys_alveo/_x/link/run_link
+INFO: [SYSTEM_LINK 82-76] Reading emulation BD and HPFM information
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Sun May 17 14:52:12 2020
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/ld443/sys_alveo/SysArray.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/ld443/sys_alveo/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [14:52:12] build_xd_ip_db started: /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ld443/sys_alveo/_x/link/sys_link/xilinx_u250_xdma_201830_2.hpfm -clkid 0 -ip /home/ld443/sys_alveo/_x/link/sys_link/iprepo/mycompany_com_kernel_SysArray_1_0,SysArray -o /home/ld443/sys_alveo/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [14:52:18] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 279.141 ; gain = 0.000 ; free physical = 185055 ; free virtual = 239926
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/ld443/sys_alveo/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [14:52:18] cfgen started: /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/cfgen -dmclkid 0 -r /home/ld443/sys_alveo/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/ld443/sys_alveo/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: SysArray, num: 1  {SysArray_1}
+INFO: [CFGEN 83-2226] Inferring mapping for argument SysArray_1.input_matrix to DDR[0]
+INFO: [CFGEN 83-2226] Inferring mapping for argument SysArray_1.weight_matrix to DDR[0]
+INFO: [CFGEN 83-2226] Inferring mapping for argument SysArray_1.output_matrix to DDR[0]
+INFO: [SYSTEM_LINK 82-37] [14:52:24] cfgen finished successfully
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 287.598 ; gain = 0.000 ; free physical = 185057 ; free virtual = 239928
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [14:52:24] cf2bd started: /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/ld443/sys_alveo/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/ld443/sys_alveo/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/ld443/sys_alveo/_x/link/sys_link/_sysl/.xsd --temp_dir /home/ld443/sys_alveo/_x/link/sys_link --output_dir /home/ld443/sys_alveo/_x/link/int --target_bd pfm_dynamic.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/ld443/sys_alveo/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/ld443/sys_alveo/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd pfm_dynamic.bd -dn dr -dp /home/ld443/sys_alveo/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [14:52:27] cf2bd finished successfully
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 287.598 ; gain = 0.000 ; free physical = 185036 ; free virtual = 239912
+INFO: [v++ 60-1441] [14:52:28] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 687.301 ; gain = 0.000 ; free physical = 185138 ; free virtual = 239944
+INFO: [v++ 60-1443] [14:52:28] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/ld443/sys_alveo/_x/link/int/sdsl.dat -rtd /home/ld443/sys_alveo/_x/link/int/cf2sw.rtd -xclbin /home/ld443/sys_alveo/_x/link/int/xclbin_orig.xml -o /home/ld443/sys_alveo/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /home/ld443/sys_alveo/_x/link/run_link
+INFO: [v++ 60-1441] [14:52:30] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 687.301 ; gain = 0.000 ; free physical = 185131 ; free virtual = 239937
+INFO: [v++ 60-1443] [14:52:30] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram --rtdJsonFileName /home/ld443/sys_alveo/_x/link/int/cf2sw.rtd --diagramJsonFileName /home/ld443/sys_alveo/_x/link/int/systemDiagramModel.json --platformFilePath /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --generatedByName v++ --generatedByVersion 2019.2.1 --generatedByChangeList 2729669 --generatedByTimeStamp Thu Dec  5 04:48:12 MST 2019 --generatedByOptions /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw -lo ./xclbin/SysArray.hw.xilinx_u250_xdma_201830_2.xclbin SysArray.xo --platform xilinx_u250_xdma_201830_2  --generatedByXclbinName SysArray.hw.xilinx_u250_xdma_201830_2 --kernelInfoDataFileName /home/ld443/sys_alveo/_x/link/int/kernel_info.dat
+INFO: [v++ 60-1454] Run Directory: /home/ld443/sys_alveo/_x/link/run_link
+INFO: [v++ 60-839] Read in kernel information from file '/home/ld443/sys_alveo/_x/link/int/kernel_info.dat'.
+WARNING: [v++ 82-214] Could not generate kernel estimated resources because /home/ld443/sys_alveo/_x/link/int/xo/SysArray/SysArray/SysArray.design.xml does not exist.
+INFO: [v++ 60-1441] [14:52:32] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 687.301 ; gain = 0.000 ; free physical = 185138 ; free virtual = 239943
+INFO: [v++ 60-1443] [14:52:32] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u250_xdma_201830_2 --output_dir /home/ld443/sys_alveo/_x/link/int --log_dir /home/ld443/sys_alveo/_x/logs/link --report_dir /home/ld443/sys_alveo/_x/reports/link --config /home/ld443/sys_alveo/_x/link/int/vplConfig.ini -k /home/ld443/sys_alveo/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ld443/sys_alveo/_x/link --no-info --tlog_dir /home/ld443/sys_alveo/_x/.tlog/v++_link_SysArray.hw.xilinx_u250_xdma_201830_2 --iprepo /home/ld443/sys_alveo/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0 --messageDb /home/ld443/sys_alveo/_x/link/run_link/vpl.pb /home/ld443/sys_alveo/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /home/ld443/sys_alveo/_x/link/run_link
+
+****** vpl v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/home/ld443/sys_alveo/_x/link/int/kernel_info.dat'.
+INFO: [VPL 60-423]   Target device: xilinx_u250_xdma_201830_2
+INFO: [VPL 60-1032] Extracting hardware platform to /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform
+[14:53:40] Run vpl: Step create_project: Started
+Creating Vivado project.
+[14:53:46] Run vpl: Step create_project: Completed
+[14:53:46] Run vpl: Step create_bd: Started
+[14:55:12] Run vpl: Step create_bd: RUNNING...
+[14:56:33] Run vpl: Step create_bd: RUNNING...
+[14:56:34] Run vpl: Step create_bd: Completed
+[14:56:34] Run vpl: Step update_bd: Started
+[14:56:41] Run vpl: Step update_bd: Completed
+[14:56:41] Run vpl: Step generate_target: Started
+[14:58:01] Run vpl: Step generate_target: RUNNING...
+[14:59:20] Run vpl: Step generate_target: RUNNING...
+[15:00:05] Run vpl: Step generate_target: Completed
+[15:00:05] Run vpl: Step config_hw_runs: Started
+[15:00:33] Run vpl: Step config_hw_runs: Completed
+[15:00:33] Run vpl: Step synth: Started
+[15:01:42] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[15:02:16] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[15:02:51] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[15:03:24] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[15:03:58] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[15:04:32] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[15:05:05] Block-level synthesis in progress, 7 of 85 jobs complete, 1 job running.
+[15:05:39] Block-level synthesis in progress, 8 of 85 jobs complete, 6 jobs running.
+[15:06:12] Block-level synthesis in progress, 9 of 85 jobs complete, 6 jobs running.
+[15:06:46] Block-level synthesis in progress, 10 of 85 jobs complete, 7 jobs running.
+[15:07:20] Block-level synthesis in progress, 10 of 85 jobs complete, 8 jobs running.
+[15:07:54] Block-level synthesis in progress, 10 of 85 jobs complete, 8 jobs running.
+[15:08:27] Block-level synthesis in progress, 10 of 85 jobs complete, 8 jobs running.
+[15:09:01] Block-level synthesis in progress, 10 of 85 jobs complete, 8 jobs running.
+[15:09:34] Block-level synthesis in progress, 15 of 85 jobs complete, 3 jobs running.
+[15:10:08] Block-level synthesis in progress, 19 of 85 jobs complete, 4 jobs running.
+[15:10:42] Block-level synthesis in progress, 21 of 85 jobs complete, 6 jobs running.
+[15:11:15] Block-level synthesis in progress, 21 of 85 jobs complete, 7 jobs running.
+[15:11:49] Block-level synthesis in progress, 21 of 85 jobs complete, 8 jobs running.
+[15:12:23] Block-level synthesis in progress, 21 of 85 jobs complete, 8 jobs running.
+[15:12:57] Block-level synthesis in progress, 21 of 85 jobs complete, 8 jobs running.
+[15:13:32] Block-level synthesis in progress, 23 of 85 jobs complete, 6 jobs running.
+[15:14:05] Block-level synthesis in progress, 25 of 85 jobs complete, 6 jobs running.
+[15:14:39] Block-level synthesis in progress, 29 of 85 jobs complete, 4 jobs running.
+[15:15:13] Block-level synthesis in progress, 32 of 85 jobs complete, 5 jobs running.
+[15:15:47] Block-level synthesis in progress, 32 of 85 jobs complete, 7 jobs running.
+[15:16:20] Block-level synthesis in progress, 32 of 85 jobs complete, 8 jobs running.
+[15:16:55] Block-level synthesis in progress, 32 of 85 jobs complete, 8 jobs running.
+[15:17:28] Block-level synthesis in progress, 33 of 85 jobs complete, 7 jobs running.
+[15:18:02] Block-level synthesis in progress, 34 of 85 jobs complete, 7 jobs running.
+[15:18:36] Block-level synthesis in progress, 36 of 85 jobs complete, 5 jobs running.
+[15:19:09] Block-level synthesis in progress, 38 of 85 jobs complete, 6 jobs running.
+[15:19:43] Block-level synthesis in progress, 40 of 85 jobs complete, 5 jobs running.
+[15:20:17] Block-level synthesis in progress, 41 of 85 jobs complete, 7 jobs running.
+[15:20:50] Block-level synthesis in progress, 41 of 85 jobs complete, 8 jobs running.
+[15:21:25] Block-level synthesis in progress, 41 of 85 jobs complete, 8 jobs running.
+[15:21:58] Block-level synthesis in progress, 42 of 85 jobs complete, 7 jobs running.
+[15:22:32] Block-level synthesis in progress, 44 of 85 jobs complete, 6 jobs running.
+[15:23:06] Block-level synthesis in progress, 45 of 85 jobs complete, 7 jobs running.
+[15:23:41] Block-level synthesis in progress, 49 of 85 jobs complete, 4 jobs running.
+[15:24:14] Block-level synthesis in progress, 49 of 85 jobs complete, 7 jobs running.
+[15:24:49] Block-level synthesis in progress, 49 of 85 jobs complete, 8 jobs running.
+[15:25:23] Block-level synthesis in progress, 49 of 85 jobs complete, 8 jobs running.
+[15:25:57] Block-level synthesis in progress, 49 of 85 jobs complete, 8 jobs running.
+[15:26:31] Block-level synthesis in progress, 50 of 85 jobs complete, 7 jobs running.
+[15:27:05] Block-level synthesis in progress, 52 of 85 jobs complete, 6 jobs running.
+[15:27:40] Block-level synthesis in progress, 55 of 85 jobs complete, 5 jobs running.
+[15:28:14] Block-level synthesis in progress, 56 of 85 jobs complete, 7 jobs running.
+[15:28:49] Block-level synthesis in progress, 58 of 85 jobs complete, 6 jobs running.
+[15:29:25] Block-level synthesis in progress, 58 of 85 jobs complete, 8 jobs running.
+[15:29:59] Block-level synthesis in progress, 58 of 85 jobs complete, 8 jobs running.
+[15:30:34] Block-level synthesis in progress, 58 of 85 jobs complete, 8 jobs running.
+[15:31:08] Block-level synthesis in progress, 59 of 85 jobs complete, 7 jobs running.
+[15:31:42] Block-level synthesis in progress, 59 of 85 jobs complete, 8 jobs running.
+[15:32:50] Block-level synthesis in progress, 64 of 85 jobs complete, 4 jobs running.
+[15:33:25] Block-level synthesis in progress, 64 of 85 jobs complete, 8 jobs running.
+[15:34:34] Block-level synthesis in progress, 65 of 85 jobs complete, 7 jobs running.
+[15:35:08] Block-level synthesis in progress, 66 of 85 jobs complete, 7 jobs running.
+[15:35:43] Block-level synthesis in progress, 67 of 85 jobs complete, 6 jobs running.
+[15:36:18] Block-level synthesis in progress, 69 of 85 jobs complete, 6 jobs running.
+[15:36:52] Block-level synthesis in progress, 73 of 85 jobs complete, 3 jobs running.
+[15:37:26] Block-level synthesis in progress, 79 of 85 jobs complete, 2 jobs running.
+[15:38:00] Block-level synthesis in progress, 79 of 85 jobs complete, 2 jobs running.
+[15:38:34] Block-level synthesis in progress, 80 of 85 jobs complete, 1 job running.
+[15:39:08] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[15:39:42] Block-level synthesis in progress, 85 of 85 jobs complete, 0 jobs running.
+[15:40:17] Block-level synthesis in progress, 85 of 85 jobs complete, 0 jobs running.
+[15:40:52] Top-level synthesis in progress.
+[15:41:27] Top-level synthesis in progress.
+[15:42:01] Top-level synthesis in progress.
+[15:42:36] Top-level synthesis in progress.
+[15:43:10] Top-level synthesis in progress.
+[15:43:45] Top-level synthesis in progress.
+[15:44:20] Top-level synthesis in progress.
+[15:44:54] Top-level synthesis in progress.
+[15:45:20] Run vpl: Step synth: Completed
+[15:45:20] Run vpl: Step impl: Started
+[15:57:26] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 01h 04m 51s 
+
+[15:57:26] Starting logic optimization..
+[15:58:32] Phase 1 Generate And Synthesize MIG Cores
+[16:06:16] Phase 2 Generate And Synthesize Debug Cores
+[16:13:24] Phase 3 Retarget
+[16:13:57] Phase 4 Constant propagation
+[16:13:57] Phase 5 Sweep
+[16:15:04] Phase 6 BUFG optimization
+[16:15:04] Phase 7 Shift Register Optimization
+[16:15:04] Phase 8 Post Processing Netlist
+[16:16:43] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 19m 17s 
+
+[16:16:43] Starting logic placement..
+[16:17:49] Phase 1 Placer Initialization
+[16:17:49] Phase 1.1 Placer Initialization Netlist Sorting
+[16:20:35] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[16:23:20] Phase 1.3 Build Placer Netlist Model
+[16:25:33] Phase 1.4 Constrain Clocks/Macros
+[16:25:33] Phase 2 Global Placement
+[16:25:33] Phase 2.1 Floorplanning
+[16:28:18] Phase 2.2 Global Placement Core
+[16:38:12] Phase 2.2.1 Physical Synthesis In Placer
+[16:39:19] Phase 3 Detail Placement
+[16:39:19] Phase 3.1 Commit Multi Column Macros
+[16:39:52] Phase 3.2 Commit Most Macros & LUTRAMs
+[16:39:52] Phase 3.3 Area Swap Optimization
+[16:40:25] Phase 3.4 Pipeline Register Optimization
+[16:40:25] Phase 3.5 IO Cut Optimizer
+[16:40:25] Phase 3.6 Fast Optimization
+[16:40:58] Phase 3.7 Small Shape DP
+[16:40:58] Phase 3.7.1 Small Shape Clustering
+[16:41:32] Phase 3.7.2 Flow Legalize Slice Clusters
+[16:42:05] Phase 3.7.3 Slice Area Swap
+[16:42:05] Phase 3.7.4 Commit Slice Clusters
+[16:42:38] Phase 3.8 Place Remaining
+[16:42:38] Phase 3.9 Re-assign LUT pins
+[16:43:11] Phase 3.10 Pipeline Register Optimization
+[16:43:11] Phase 3.11 Fast Optimization
+[16:43:44] Phase 4 Post Placement Optimization and Clean-Up
+[16:43:44] Phase 4.1 Post Commit Optimization
+[16:44:50] Phase 4.1.1 Post Placement Optimization
+[16:44:50] Phase 4.1.1.1 BUFG Insertion
+[16:45:23] Phase 4.1.1.2 BUFG Replication
+[16:45:57] Phase 4.1.1.3 Replication
+[16:46:30] Phase 4.2 Post Placement Cleanup
+[16:47:36] Phase 4.3 Placer Reporting
+[16:47:36] Phase 4.4 Final Placement Cleanup
+[16:54:15] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 37m 31s 
+
+[16:54:15] Starting logic routing..
+[16:55:21] Phase 1 Build RT Design
+[17:05:59] Phase 2 Router Initialization
+[17:05:59] Phase 2.1 Create Timer
+[17:05:59] Phase 2.2 Fix Topology Constraints
+[17:05:59] Phase 2.3 Pre Route Cleanup
+[17:06:32] Phase 2.4 Global Clock Net Routing
+[17:06:32] Phase 2.5 Update Timing
+[17:08:44] Phase 2.6 Update Timing for Bus Skew
+[17:08:44] Phase 2.6.1 Update Timing
+[17:09:52] Phase 3 Initial Routing
+[17:10:25] Phase 4 Rip-up And Reroute
+[17:10:25] Phase 4.1 Global Iteration 0
+[17:14:21] Phase 4.2 Global Iteration 1
+[17:15:30] Phase 4.3 Global Iteration 2
+[17:16:37] Phase 4.4 Global Iteration 3
+[17:17:10] Phase 5 Delay and Skew Optimization
+[17:17:10] Phase 5.1 Delay CleanUp
+[17:17:10] Phase 5.1.1 Update Timing
+[17:18:21] Phase 5.1.2 Update Timing
+[17:18:55] Phase 5.2 Clock Skew Optimization
+[17:18:55] Phase 6 Post Hold Fix
+[17:18:55] Phase 6.1 Hold Fix Iter
+[17:18:55] Phase 6.1.1 Update Timing
+[17:20:01] Phase 7 Leaf Clock Prog Delay Opt
+[17:21:40] Phase 7.1 Delay CleanUp
+[17:21:40] Phase 7.1.1 Update Timing
+[17:22:13] Phase 7.1.2 Update Timing
+[17:22:47] Phase 7.2 Hold Fix Iter
+[17:22:47] Phase 7.2.1 Update Timing
+[17:24:59] Phase 8 Route finalize
+[17:24:59] Phase 9 Verifying routed nets
+[17:24:59] Phase 10 Depositing Routes
+[17:25:32] Phase 11 Post Router Timing
+[17:26:06] Phase 12 Physical Synthesis in Router
+[17:26:06] Phase 12.1 Physical Synthesis Initialization
+[17:27:45] Phase 12.2 Critical Path Optimization
+[17:28:18] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 34m 03s 
+
+[17:28:18] Starting bitstream generation..
+[17:37:10] Creating bitmap...
+[17:45:28] Writing bitstream ./pfm_top_i_dynamic_region_my_rm_partial.bit...
+[17:45:28] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 17m 09s 
+[17:46:13] Run vpl: Step impl: Completed
+[17:46:15] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [17:46:27] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:04:29 ; elapsed = 02:53:55 . Memory (MB): peak = 687.301 ; gain = 0.000 ; free physical = 179204 ; free virtual = 235046
+INFO: [v++ 60-1443] [17:46:27] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /home/ld443/sys_alveo/_x/link/run_link
+INFO: [v++ 60-991] clock name 'clkwiz_kernel_clk_out1' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'clkwiz_kernel2_clk_out1' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): Kernel (DATA) clock: clkwiz_kernel_clk_out1 = 255, Kernel (KERNEL) clock: clkwiz_kernel2_clk_out1 = 500
+INFO: [v++ 60-1453] Command Line: cf2sw -a /home/ld443/sys_alveo/_x/link/int/address_map.xml -sdsl /home/ld443/sys_alveo/_x/link/int/sdsl.dat -xclbin /home/ld443/sys_alveo/_x/link/int/xclbin_orig.xml -rtd /home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.rtd -o /home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.xml
+INFO: [v++ 60-1618] Launching 
+INFO: [v++ 60-1441] [17:46:32] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 687.301 ; gain = 0.000 ; free physical = 179208 ; free virtual = 235050
+INFO: [v++ 60-1443] [17:46:32] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/ld443/sys_alveo/_x/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/ld443/sys_alveo/_x/link/int/partial.bit --force --key-value SYS:mode:hw_pr --add-section :JSON:/home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.rtd --append-section :JSON:/home/ld443/sys_alveo/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2_xml.rtd --add-section BUILD_METADATA:JSON:/home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.xml --add-section SYSTEM_METADATA:RAW:/home/ld443/sys_alveo/_x/link/int/systemDiagramModelSlrBaseAddress.json --output /home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/ld443/sys_alveo/_x/link/run_link
+XRT Build Version: 2.3.1301
+       Build Date: 2019-10-25 03:04:42
+          Hash ID: 192e706aea53163a04c574f9b3fe9ed76b6ca471
+Creating a default 'in-memory' xclbin image.
+
+Section: 'DEBUG_IP_LAYOUT'(9) was successfully added.
+Size   : 296 bytes
+Format : JSON
+File   : '/home/ld443/sys_alveo/_x/link/int/debug_ip_layout.rtd'
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 55732833 bytes
+Format : RAW
+File   : '/home/ld443/sys_alveo/_x/link/int/partial.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 274 bytes
+Format : JSON
+File   : '/home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 3268 bytes
+Format : JSON
+File   : '/home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 3888 bytes
+Format : RAW
+File   : '/home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 7460 bytes
+Format : RAW
+File   : '/home/ld443/sys_alveo/_x/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (55757037 bytes) to the output file: /home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [17:46:32] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 687.301 ; gain = 0.000 ; free physical = 179155 ; free virtual = 235050
+INFO: [v++ 60-1443] [17:46:32] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --info /home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.xclbin.info --input /home/ld443/sys_alveo/_x/link/int/SysArray.hw.xilinx_u250_xdma_201830_2.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/ld443/sys_alveo/_x/link/run_link
+INFO: [v++ 60-1441] [17:46:33] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.80 . Memory (MB): peak = 687.301 ; gain = 0.000 ; free physical = 179152 ; free virtual = 235047
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/ld443/sys_alveo/_x/reports/link/system_estimate_SysArray.hw.xilinx_u250_xdma_201830_2.xtxt
+INFO: [v++ 60-586] Created /home/ld443/sys_alveo/xclbin/SysArray.hw.xilinx_u250_xdma_201830_2.ltx
+INFO: [v++ 60-586] Created ./xclbin/SysArray.hw.xilinx_u250_xdma_201830_2.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /home/ld443/sys_alveo/_x/reports/link/v++_link_SysArray.hw.xilinx_u250_xdma_201830_2_guidance.html
+	Timing Report: /home/ld443/sys_alveo/_x/reports/link/imp/xilinx_u250_xdma_201830_2_bb_locked_timing_summary_routed.rpt
+	Utilizations Report: /home/ld443/sys_alveo/_x/reports/link/imp/kernel_util_routed.rpt
+	Vivado Log: /home/ld443/sys_alveo/_x/logs/link/vivado.log
+	Steps Log File: /home/ld443/sys_alveo/_x/logs/link/link.steps.log
+
+INFO: [v++ 60-791] Total elapsed time: 2h 54m 45s

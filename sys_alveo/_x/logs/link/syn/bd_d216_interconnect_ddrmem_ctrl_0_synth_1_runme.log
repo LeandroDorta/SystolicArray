@@ -1,0 +1,929 @@
+
+*** Running vivado
+    with args -log bd_d216_interconnect_ddrmem_ctrl_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_d216_interconnect_ddrmem_ctrl_0.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bd_d216_interconnect_ddrmem_ctrl_0.tcl -notrace
+[OPTRACE]|47326|1|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743105934|START|bd_d216_interconnect_ddrmem_ctrl_0_synth_1|ROLLUP_AUTO
+[OPTRACE]|47326|2|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743105938|START|Creating in-memory project|
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/sys_alveo/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4:pcie4_gt_if:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4:pcie4_gt_if_rtl:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if_rtl.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom_rtl:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom_rtl:1.0' found within IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom_rtl.xml
+File ignored: /home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:Monitor_AXI_Master:1.0'. The one found in IP location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/monitor_axi_master_v1_0' will take precedence over the same IP in location /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/monitor_axi_master_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie4_uscale_plus:1.3'. The one found in IP location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xdma:4.1'. The one found in IP location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_control:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_external_msix:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_mgmt:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_external:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_internal:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_pm:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_status:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_gt_if:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pcie_id:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pl:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_rbar:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:dsc_bypass:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/dsc_bypass.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/dsc_bypass.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_7x_transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_7x_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_7x_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_ext_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/axi_pcie3_v3_0/interfaces/pcie3_us_ext_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:pcie3_us_gt_if:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie3_ultrascale_v4_4/interfaces/pcie3_us_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:int_shared_logic:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_int_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_int_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_us_transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie4_us_plus_transceiver_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_us_plus_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie4_us_plus_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_cfg_external_msix:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_debug:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_debug_ports:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_debug_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_debug_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_status_ports:1.0'. The one found in location '/home/ld443/sys_alveo/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_status_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_status_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:sdsoc_trace:2.0'. The one found in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/interfaces/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.699 ; gain = 190.789 ; free physical = 171214 ; free virtual = 227932
+[OPTRACE]|47326|3|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743120476|END|Creating in-memory project|
+[OPTRACE]|47326|4|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743120476|START|Adding files|
+[OPTRACE]|47326|5|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743121053|END|Adding files|
+[OPTRACE]|47326|6|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743121055|START|Configure IP Cache|
+[OPTRACE]|47326|7|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743121080|END|Configure IP Cache|
+[OPTRACE]|47326|8|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743121081|START|synth_design|
+Command: synth_design -top bd_d216_interconnect_ddrmem_ctrl_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 50037 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2909.547 ; gain = 183.609 ; free physical = 170079 ; free virtual = 226797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_d216_interconnect_ddrmem_ctrl_0' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_16/synth/bd_d216_interconnect_ddrmem_ctrl_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_18_top' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:557]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 25 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 64'b0000000000000000000000000000000000000001000000000000000000000000 
+	Parameter C_RANGE_SIZE bound to: 16 - type: integer 
+	Parameter C_USES_DEST bound to: 0 - type: integer 
+	Parameter C_DEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEST bound to: 1'b0 
+	Parameter C_PREFIX_WIDTH bound to: 1 - type: integer 
+	Parameter C_PREFIX bound to: 1'b0 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_DECERR bound to: 2'b11 
+	Parameter P_NUM_RANGES_LOG bound to: 1 - type: integer 
+	Parameter W_IDLE bound to: 2'b00 
+	Parameter W_PENDING bound to: 2'b01 
+	Parameter W_DECERR bound to: 2'b11 
+	Parameter R_IDLE bound to: 2'b00 
+	Parameter R_PENDING bound to: 2'b01 
+	Parameter R_DECERR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_18_addr_decoder' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:63]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_NUM_RANGES_LOG bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 25 - type: integer 
+	Parameter C_BASE_ADDR bound to: 64'b0000000000000000000000000000000000000001000000000000000000000000 
+	Parameter C_RANGE_SIZE bound to: 16 - type: integer 
+	Parameter C_RANGE_QUAL bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_18_addr_decoder' (1#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_mmu_v2_1_18_decerr_slave' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:201]
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_SUPPORTS_WRITE bound to: 1 - type: integer 
+	Parameter C_AXI_SUPPORTS_READ bound to: 1 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_18_decerr_slave' (2#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:201]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 33 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_REG_CONFIG_AW bound to: 7 - type: integer 
+	Parameter C_REG_CONFIG_W bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_B bound to: 0 - type: integer 
+	Parameter C_REG_CONFIG_AR bound to: 7 - type: integer 
+	Parameter C_REG_CONFIG_R bound to: 0 - type: integer 
+	Parameter C_RESERVE_MODE bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER_AW bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER_W bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER_B bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER_AR bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER_R bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE_AW bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE_W bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE_B bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE_AR bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE_R bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE_AW bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE_W bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE_B bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE_AR bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE_R bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter P_FORWARD bound to: 0 - type: integer 
+	Parameter P_RESPONSE bound to: 1 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 33 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 33 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 33 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 33 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 33 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 33 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 33 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 33 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 33 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (3#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 33 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_REGION_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter C_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter C_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+	Parameter G_AXI_AWADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_AWADDR_WIDTH bound to: 33 - type: integer 
+	Parameter G_AXI_AWPROT_INDEX bound to: 33 - type: integer 
+	Parameter G_AXI_AWPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_AWSIZE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWBURST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWCACHE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLEN_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWLOCK_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWQOS_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWREGION_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_AWPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_ARADDR_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_ARADDR_WIDTH bound to: 33 - type: integer 
+	Parameter G_AXI_ARPROT_INDEX bound to: 33 - type: integer 
+	Parameter G_AXI_ARPROT_WIDTH bound to: 3 - type: integer 
+	Parameter G_AXI_ARSIZE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARSIZE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARBURST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARBURST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARCACHE_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARCACHE_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLEN_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARLEN_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARLOCK_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARLOCK_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARQOS_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARQOS_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARREGION_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARREGION_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_ARPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_WDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_WDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter G_AXI_WLAST_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WID_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WUSER_INDEX bound to: 36 - type: integer 
+	Parameter G_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_WPAYLOAD_WIDTH bound to: 36 - type: integer 
+	Parameter G_AXI_BRESP_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_BRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_BID_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BUSER_INDEX bound to: 2 - type: integer 
+	Parameter G_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_BPAYLOAD_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RDATA_INDEX bound to: 0 - type: integer 
+	Parameter G_AXI_RDATA_WIDTH bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_INDEX bound to: 32 - type: integer 
+	Parameter G_AXI_RRESP_WIDTH bound to: 2 - type: integer 
+	Parameter G_AXI_RLAST_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RLAST_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RID_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RID_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RUSER_INDEX bound to: 34 - type: integer 
+	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (4#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice' (5#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized0' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized0' (5#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized1' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 2 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized1' (5#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized2' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 34 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice__parameterized2' (5#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axi_register_slice' (6#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:3704]
+WARNING: [Synth 8-7023] instance 'register_slice_inst' of module 'axi_register_slice_v2_1_20_axi_register_slice' has 93 connections declared, but only 92 given [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:1172]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mmu_v2_1_18_top' (7#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:557]
+INFO: [Synth 8-6155] done synthesizing module 'bd_d216_interconnect_ddrmem_ctrl_0' (8#1) [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_16/synth/bd_d216_interconnect_ddrmem_ctrl_0.v:58]
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_20_axic_register_slice__parameterized2 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_20_axic_register_slice__parameterized2 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_20_axic_register_slice__parameterized1 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_20_axic_register_slice__parameterized1 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_20_axic_register_slice__parameterized0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_20_axic_register_slice__parameterized0 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_bid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_rid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_rlast
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi has unconnected port m_axi_ruser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awregion[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awqos[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awqos[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awqos[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awqos[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wlast
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arburst[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arregion[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arqos[3]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arqos[2]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arqos[1]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_arqos[0]
+WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_register_slice_v2_1_20_axi_register_slice has unconnected port aclk2x
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_wlast
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_decerr_slave has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[15]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[14]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[13]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[12]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[11]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[10]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[9]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[8]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[7]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[6]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[5]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[4]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[3]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[2]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[1]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_addr_decoder has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2977.277 ; gain = 251.340 ; free physical = 172065 ; free virtual = 228780
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2983.207 ; gain = 257.270 ; free physical = 172029 ; free virtual = 228744
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2983.207 ; gain = 257.270 ; free physical = 172029 ; free virtual = 228744
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2983.207 ; gain = 0.000 ; free physical = 172014 ; free virtual = 228729
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_16/bd_d216_interconnect_ddrmem_ctrl_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_16/bd_d216_interconnect_ddrmem_ctrl_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3125.738 ; gain = 0.000 ; free physical = 172815 ; free virtual = 229530
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3125.742 ; gain = 0.004 ; free physical = 172806 ; free virtual = 229521
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 3125.742 ; gain = 399.805 ; free physical = 172154 ; free virtual = 228869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 3125.742 ; gain = 399.805 ; free physical = 172154 ; free virtual = 228869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 3125.742 ; gain = 399.805 ; free physical = 172152 ; free virtual = 228867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'gen_axilite.gen_write.s_axi_wready_i_reg' into 'gen_axilite.gen_write.s_axi_awready_i_reg' [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:268]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:1060]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:924]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/cba0/hdl/axi_mmu_v2_1_vl_rfs.v:918]
+INFO: [Synth 8-802] inferred FSM for state register 'gen_write.w_state_reg' in module 'axi_mmu_v2_1_18_top'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_read.r_state_reg' in module 'axi_mmu_v2_1_18_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+*
+               W_PENDING |                              010 |                              001
+                W_DECERR |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_write.w_state_reg' using encoding 'one-hot' in module 'axi_mmu_v2_1_18_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                              000
+*
+               R_PENDING |                               01 |                              001
+                R_DECERR |                               10 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_read.r_state_reg' using encoding 'sequential' in module 'axi_mmu_v2_1_18_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 3125.750 ; gain = 399.812 ; free physical = 172137 ; free virtual = 228853
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               36 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_mmu_v2_1_18_addr_decoder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module axi_mmu_v2_1_18_decerr_slave 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_register_slice_v2_1_20_axic_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module axi_mmu_v2_1_18_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	                6 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_top has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_mmu_v2_1_18_top has unconnected port s_axi_awlen[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'inst/aresetn_d_reg[0]' (FDR) to 'inst/register_slice_inst/ar.ar_pipe/aresetn_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/aresetn_d_reg[1]' (FDR) to 'inst/aresetn_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/aresetn_d_reg[0]' (FDR) to 'inst/register_slice_inst/aw.aw_pipe/aresetn_d_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/aresetn_d_reg[1]' (FDR) to 'inst/register_slice_inst/aw.aw_pipe/aresetn_d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[25]' (FDE) to 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[26]' (FDE) to 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[27]' (FDE) to 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[28]' (FDE) to 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[29]' (FDE) to 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[30]' (FDE) to 'inst/register_slice_inst/ar.ar_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\register_slice_inst/ar.ar_pipe/m_payload_i_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[25]' (FDE) to 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[26]' (FDE) to 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[27]' (FDE) to 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[28]' (FDE) to 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[29]' (FDE) to 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[30]' (FDE) to 'inst/register_slice_inst/aw.aw_pipe/m_payload_i_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\register_slice_inst/aw.aw_pipe/m_payload_i_reg[31] )
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_gen_write.w_state_reg[0]) is unused and will be removed from module axi_mmu_v2_1_18_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 3125.750 ; gain = 399.812 ; free physical = 172001 ; free virtual = 228720
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:02:20 . Memory (MB): peak = 3465.320 ; gain = 739.383 ; free physical = 166653 ; free virtual = 223400
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:02:20 . Memory (MB): peak = 3477.328 ; gain = 751.391 ; free physical = 166638 ; free virtual = 223385
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:02:20 . Memory (MB): peak = 3487.344 ; gain = 761.406 ; free physical = 166626 ; free virtual = 223373
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.285 ; gain = 767.348 ; free physical = 166493 ; free virtual = 223240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.285 ; gain = 767.348 ; free physical = 166492 ; free virtual = 223239
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.285 ; gain = 767.348 ; free physical = 166491 ; free virtual = 223238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.285 ; gain = 767.348 ; free physical = 166490 ; free virtual = 223237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.285 ; gain = 767.348 ; free physical = 166490 ; free virtual = 223237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.285 ; gain = 767.348 ; free physical = 166490 ; free virtual = 223237
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     8|
+|2     |LUT2 |    10|
+|3     |LUT3 |    44|
+|4     |LUT4 |    16|
+|5     |LUT5 |    11|
+|6     |LUT6 |    22|
+|7     |FDRE |    91|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------------------------------------+------+
+|      |Instance                |Module                                           |Cells |
++------+------------------------+-------------------------------------------------+------+
+|1     |top                     |                                                 |   202|
+|2     |  inst                  |axi_mmu_v2_1_18_top                              |   202|
+|3     |    decerr_slave_inst   |axi_mmu_v2_1_18_decerr_slave                     |    15|
+|4     |    register_slice_inst |axi_register_slice_v2_1_20_axi_register_slice    |   104|
+|5     |      \ar.ar_pipe       |axi_register_slice_v2_1_20_axic_register_slice   |    50|
+|6     |      \aw.aw_pipe       |axi_register_slice_v2_1_20_axic_register_slice_0 |    54|
++------+------------------------+-------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.285 ; gain = 767.348 ; free physical = 166490 ; free virtual = 223237
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 51 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:02:10 . Memory (MB): peak = 3493.285 ; gain = 624.812 ; free physical = 166515 ; free virtual = 223262
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:02:24 . Memory (MB): peak = 3493.289 ; gain = 767.348 ; free physical = 166514 ; free virtual = 223261
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3499.223 ; gain = 0.000 ; free physical = 166528 ; free virtual = 223275
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3571.887 ; gain = 0.000 ; free physical = 166441 ; free virtual = 223188
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 136 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:03:25 . Memory (MB): peak = 3571.887 ; gain = 1767.188 ; free physical = 166550 ; free virtual = 223297
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+[OPTRACE]|47326|9|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743326560|END|synth_design|
+[OPTRACE]|47326|10|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743326560|START|Write IP Cache|
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3571.887 ; gain = 0.000 ; free physical = 166550 ; free virtual = 223297
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_d216_interconnect_ddrmem_ctrl_0, cache-ID = 6f027bd5d43bfc73
+[OPTRACE]|47326|11|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743328227|END|Write IP Cache|
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+[OPTRACE]|47326|12|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743328228|START|write_checkpoint|CHECKPOINT
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3571.895 ; gain = 0.000 ; free physical = 166209 ; free virtual = 222956
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.dcp' has been generated.
+[OPTRACE]|47326|13|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743328658|END|write_checkpoint|
+[OPTRACE]|47326|14|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743328658|START|synth_report|REPORT
+INFO: [runtcl-4] Executing : report_utilization -file bd_d216_interconnect_ddrmem_ctrl_0_utilization_synth.rpt -pb bd_d216_interconnect_ddrmem_ctrl_0_utilization_synth.pb
+[OPTRACE]|47326|15|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743329118|END|synth_report|
+[OPTRACE]|47326|16|/home/ld443/sys_alveo/_x/link/vivado/vpl/prj/prj.runs/bd_d216_interconnect_ddrmem_ctrl_0_synth_1/bd_d216_interconnect_ddrmem_ctrl_0.tcl|vivado_synth|1589743329931|END|bd_d216_interconnect_ddrmem_ctrl_0_synth_1|
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 15:22:09 2020...
