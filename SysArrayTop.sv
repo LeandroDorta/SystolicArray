@@ -113,7 +113,16 @@ timeprecision 1ps;
 // Local Parameters
 ///////////////////////////////////////////////////////////////////////////////
 // Large enough for interesting traffic.
-localparam integer  LP_DEFAULT_LENGTH_IN_BYTES = 16384;
+localparam integer MATRIX_W_ROWS = 4;
+localparam integer MATRIX_W_COLS = 4;
+localparam integer MATRIX_I_ROWS = 4;
+localparam integer MATRIX_I_COLS = 4;
+localparam integer MATRIX_O_ROWS = 4;
+localparam integer MATRIX_O_COLS = 4;
+
+localparam integer NUM_BYTES = C_M00_AXI_DATA_WIDTH/8;
+
+//localparam integer  LP_DEFAULT_LENGTH_IN_BYTES = 16384;
 localparam integer  LP_NUM_EXAMPLES    = 2;
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -128,25 +137,10 @@ logic                                ap_start_pulse                ;
 //logic [LP_NUM_EXAMPLES-1:0]          ap_done_i                     ;
 //logic [LP_NUM_EXAMPLES-1:0]          ap_done_r                      = {LP_NUM_EXAMPLES{1'b0}};
 logic                                ap_done_r                      ;
-logic [32-1:0]                       ctrl_xfer_size_in_bytes        = LP_DEFAULT_LENGTH_IN_BYTES;
+logic [32-1:0]                       ctrl_xfer_size_in_bytes_input  = 4 * (MATRIX_I_COLS) * (MATRIX_I_ROWS + MATRIX_I_COLS - 1);
+logic [32-1:0]                       ctrl_xfer_size_in_bytes_weight = 4 * (MATRIX_W_COLS) * (MATRIX_W_ROWS);
+logic [32-1:0]                       ctrl_xfer_size_in_bytes_output = 4 * (MATRIX_O_COLS) * (MATRIX_O_ROWS + MATRIX_O_COLS - 1);
 logic [32-1:0]                       ctrl_constant                  = 32'd1;
-/*
-logic                                input_matrix_tvalid;
-logic                                input_matrix_tready;
-logic                                input_matrix_tlast;
-logic [C_M00_AXI_DATA_WIDTH-1:0]     input_matrix_tdata;
-logic                                weight_matrix_tvalid;
-logic                                weight_matrix_tready;
-logic                                weight_matrix_tlast;
-logic [C_M01_AXI_DATA_WIDTH-1:0]     weight_matrix_tdata;
-logic                                output_matrix_tvalid;
-logic                                output_matrix_tready;
-logic                                output_matrix_tlast;
-logic [C_M02_AXI_DATA_WIDTH-1:0]     output_matrix_tdata;
-logic                                reading_done;
-logic                                weight_done;
-logic                                write_done;
-*/
 logic                                matrix_row_en[4-1:0];
 logic [32-1:0]                       matrix_row_msg[4-1:0];
 logic                                matrix_row_rdy[4-1:0];
@@ -235,35 +229,53 @@ always @(posedge ap_clk) begin
 end
 
 genvar row, col;
+logic [MATRIX_I_COLS-1:0] input_matrix_tready_red;
+logic [MATRIX_W_COLS-1:0] weight_matrix_tready_red;
+logic [MATRIX_O_COLS-1:0] output_matrix_tvalid_red;
 generate
-	for (row=0; row<4; row=row+1) begin
-		assign matrix_row_msg[row] = input_matrix_tdata[(4 - row - 1)*C_DATA_BIT_WIDTH+:C_DATA_BIT_WIDTH];
+	for (row=0; row<MATRIX_I_COLS; row=row+1) begin
+		assign matrix_row_msg[row] = input_matrix_tdata[(MATRIX_I_COLS - row - 1)*C_DATA_BIT_WIDTH+:C_DATA_BIT_WIDTH];
 	end
-  for (row=0; row<4; row=row+1) begin
+  for (row=0; row<MATRIX_I_COLS; row=row+1) begin
     assign matrix_row_en[row] = input_matrix_tvalid && all_weights_avail;
   end
-  for (col=0; col<4; col=col+1) begin
-		assign weight_in_col_msg[col] = weight_matrix_tdata[(4 - col - 1)*C_DATA_BIT_WIDTH+:C_DATA_BIT_WIDTH];
+  for (col=0; col<MATRIX_W_COLS; col=col+1) begin
+		assign weight_in_col_msg[col] = weight_matrix_tdata[(MATRIX_W_COLS - col - 1)*C_DATA_BIT_WIDTH+:C_DATA_BIT_WIDTH];
   end
-  for (col=0; col<4; col=col+1) begin
+  for (col=0; col<MATRIX_W_COLS; col=col+1) begin
     assign weight_in_col_en[col] = weight_matrix_tvalid && !all_weights_avail;
   end
-  for (col=0; col<4; col=col+1) begin
-	assign output_matrix_tdata[(4 - col- 1)*C_DATA_BIT_WIDTH+:C_DATA_BIT_WIDTH] = (matrix_col_en[col])? matrix_col_msg[col] : '0;
+  for (col=0; col<MATRIX_O_COLS; col=col+1) begin
+	assign output_matrix_tdata[(MATRIX_O_COLS - col- 1)*C_DATA_BIT_WIDTH+:C_DATA_BIT_WIDTH] = (matrix_col_en[col])? matrix_col_msg[col] : '0;
   end
-  for (col=0; col<4; col=col+1) begin
+  for (col=0; col<MATRIX_O_COLS; col=col+1) begin
 	assign matrix_col_rdy[col] = output_matrix_tready;
+  end
+  for (row=0; row<MATRIX_I_COLS; row=row+1) begin
+    assign input_matrix_tready_red[row+:1] = matrix_row_rdy[row];
   end	
+  for (col=0; col<MATRIX_W_COLS; col=col+1) begin
+    assign weight_matrix_tready_red[col+:1] = weight_in_col_rdy[col];
+  end
+  for (col=0; col<MATRIX_W_COLS; col=col+1) begin
+    assign output_matrix_tvalid_red[col+:1] = matrix_col_en[col];
+  end
+    for (col=0; col<MATRIX_W_COLS; col=col+1) begin
+    assign weight_out_col_rdy[col] = (all_weights_avail === 1'b1)? '0 : '1;
+  end
 endgenerate
 
-assign input_matrix_tready = matrix_row_rdy[0] & matrix_row_rdy[1] & matrix_row_rdy[2] & matrix_row_rdy[3];
-assign weight_matrix_tready = weight_in_col_rdy[0] & weight_in_col_rdy[1] & weight_in_col_rdy[2] & weight_in_col_rdy[3] && !all_weights_avail_r;
-assign output_matrix_tvalid = matrix_col_en[0] || matrix_col_en[1] || matrix_col_en[2] || matrix_col_en[3];
-assign weight_out_col_rdy[0] = (all_weights_avail === 1'b1)? '0 : '1;
+assign input_matrix_tready = &input_matrix_tready_red;
+//assign input_matrix_tready = matrix_row_rdy[0] & matrix_row_rdy[1] & matrix_row_rdy[2] & matrix_row_rdy[3];
+assign weight_matrix_tready = &weight_matrix_tready_red && !all_weights_avail;
+//assign weight_matrix_tready = weight_in_col_rdy[0] & weight_in_col_rdy[1] & weight_in_col_rdy[2] & weight_in_col_rdy[3] && !all_weights_avail_r;
+assign output_matrix_tvalid = |output_matrix_tvalid_red;
+//assign output_matrix_tvalid = matrix_col_en[0] || matrix_col_en[1] || matrix_col_en[2] || matrix_col_en[3];
+/*assign weight_out_col_rdy[0] = (all_weights_avail === 1'b1)? '0 : '1;
 assign weight_out_col_rdy[1] = (all_weights_avail === 1'b1)? '0 : '1;
 assign weight_out_col_rdy[2] = (all_weights_avail === 1'b1)? '0 : '1;
 assign weight_out_col_rdy[3] = (all_weights_avail === 1'b1)? '0 : '1;
-
+*/
 
 ////////////////////////////////////////////////////////////////////////////
 axi_read_master #(
@@ -279,7 +291,7 @@ input_matrix_AXI_Read (
   .ctrl_start              ( ap_start_pulse            ) ,
   .ctrl_done               ( reading_done              ) ,
   .ctrl_addr_offset        ( input_matrix              ) ,
-  .ctrl_xfer_size_in_bytes ( ctrl_xfer_size_in_bytes   ) ,
+  .ctrl_xfer_size_in_bytes ( ctrl_xfer_size_in_bytes_input   ) ,
   .m_axi_arvalid           ( m00_axi_arvalid           ) ,
   .m_axi_arready           ( m00_axi_arready           ) ,
   .m_axi_araddr            ( m00_axi_araddr            ) ,
@@ -319,7 +331,7 @@ weight_matrix_AXI_Read (
   .ctrl_start              ( ap_start_pulse            ) ,
   .ctrl_done               ( weight_done               ) ,
   .ctrl_addr_offset        ( weight_matrix             ) ,
-  .ctrl_xfer_size_in_bytes ( ctrl_xfer_size_in_bytes   ) ,
+  .ctrl_xfer_size_in_bytes ( ctrl_xfer_size_in_bytes_weight   ) ,
   .m_axi_arvalid           ( m01_axi_arvalid           ) ,
   .m_axi_arready           ( m01_axi_arready           ) ,
   .m_axi_araddr            ( m01_axi_araddr            ) ,
@@ -360,7 +372,7 @@ AXI_write (
   .ctrl_start              ( ap_start_pulse            ) ,
   .ctrl_done               ( write_done                ) ,
   .ctrl_addr_offset        ( output_matrix             ) ,
-  .ctrl_xfer_size_in_bytes ( ctrl_xfer_size_in_bytes   ) ,
+  .ctrl_xfer_size_in_bytes ( ctrl_xfer_size_in_bytes_output   ) ,
   .m_axi_awvalid           ( m02_axi_awvalid           ) ,
   .m_axi_awready           ( m02_axi_awready           ) ,
   .m_axi_awaddr            ( m02_axi_awaddr            ) ,
@@ -403,6 +415,7 @@ SysArrayRTL sys_array
   .weight_out_col__en  ( weight_out_col_en ), 
   .weight_out_col__rdy ( weight_out_col_rdy)
 );
+
 
 endmodule : Top_wrapper
 `default_nettype wire
