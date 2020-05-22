@@ -1,0 +1,353 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/ld443/meng_project/SysArray8_new/_x/reports/link
+	Log files: /home/ld443/meng_project/SysArray8_new/_x/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/ld443/meng_project/SysArray8_new/SysArray.xclbin.link_summary, at Thu May 21 20:01:14 2020
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Thu May 21 20:01:14 2020
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/ld443/meng_project/SysArray8_new/_x/reports/link/v++_link_SysArray_guidance.html', at Thu May 21 20:01:15 2020
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm
+INFO: [v++ 60-1578]   This platform contains Device Support Archive '/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/hw/xilinx_u250_xdma_201830_2.dsa'
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u250_xdma_201830_2
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [20:01:27] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/ld443/meng_project/SysArray8_new/SysArray.xo --xpfm /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --target hw --output_dir /home/ld443/meng_project/SysArray8_new/_x/link/int --temp_dir /home/ld443/meng_project/SysArray8_new/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/ld443/meng_project/SysArray8_new/_x/link/run_link
+INFO: [SYSTEM_LINK 82-76] Reading emulation BD and HPFM information
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Thu May 21 20:01:30 2020
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/ld443/meng_project/SysArray8_new/SysArray.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [20:01:30] build_xd_ip_db started: /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/xilinx_u250_xdma_201830_2.hpfm -clkid 0 -ip /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/iprepo/mycompany_com_kernel_SysArray_1_0,SysArray -o /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [20:01:36] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 279.141 ; gain = 0.000 ; free physical = 126627 ; free virtual = 219137
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [20:01:37] cfgen started: /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/cfgen -dmclkid 0 -r /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: SysArray, num: 1  {SysArray_1}
+INFO: [CFGEN 83-2226] Inferring mapping for argument SysArray_1.input_matrix to DDR[0]
+INFO: [CFGEN 83-2226] Inferring mapping for argument SysArray_1.weight_matrix to DDR[0]
+INFO: [CFGEN 83-2226] Inferring mapping for argument SysArray_1.output_matrix to DDR[0]
+INFO: [SYSTEM_LINK 82-37] [20:01:41] cfgen finished successfully
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 287.598 ; gain = 0.000 ; free physical = 126559 ; free virtual = 219069
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [20:01:41] cf2bd started: /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/_sysl/.xsd --temp_dir /home/ld443/meng_project/SysArray8_new/_x/link/sys_link --output_dir /home/ld443/meng_project/SysArray8_new/_x/link/int --target_bd pfm_dynamic.bd
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -bd pfm_dynamic.bd -dn dr -dp /home/ld443/meng_project/SysArray8_new/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [20:01:44] cf2bd finished successfully
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 287.598 ; gain = 0.000 ; free physical = 126512 ; free virtual = 219027
+INFO: [v++ 60-1441] [20:01:45] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 687.297 ; gain = 0.000 ; free physical = 126591 ; free virtual = 219038
+INFO: [v++ 60-1443] [20:01:45] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/ld443/meng_project/SysArray8_new/_x/link/int/sdsl.dat -rtd /home/ld443/meng_project/SysArray8_new/_x/link/int/cf2sw.rtd -xclbin /home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.xml -o /home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /home/ld443/meng_project/SysArray8_new/_x/link/run_link
+INFO: [v++ 60-1441] [20:01:47] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 687.297 ; gain = 0.000 ; free physical = 126632 ; free virtual = 219076
+INFO: [v++ 60-1443] [20:01:47] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram --rtdJsonFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/cf2sw.rtd --diagramJsonFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModel.json --platformFilePath /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --generatedByName v++ --generatedByVersion 2019.2.1 --generatedByChangeList 2729669 --generatedByTimeStamp Thu Dec  5 04:48:12 MST 2019 --generatedByOptions /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw -lo SysArray.xclbin SysArray.xo --platform xilinx_u250_xdma_201830_2 -k SysArray --kernel_frequency 255  --generatedByXclbinName SysArray --kernelInfoDataFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat
+INFO: [v++ 60-1454] Run Directory: /home/ld443/meng_project/SysArray8_new/_x/link/run_link
+INFO: [v++ 60-839] Read in kernel information from file '/home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat'.
+WARNING: [v++ 82-214] Could not generate kernel estimated resources because /home/ld443/meng_project/SysArray8_new/_x/link/int/xo/SysArray/SysArray/SysArray.design.xml does not exist.
+INFO: [v++ 60-1441] [20:01:49] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 687.297 ; gain = 0.000 ; free physical = 126638 ; free virtual = 219083
+INFO: [v++ 60-1443] [20:01:49] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f xilinx_u250_xdma_201830_2 --kernel_frequency 255 --output_dir /home/ld443/meng_project/SysArray8_new/_x/link/int --log_dir /home/ld443/meng_project/SysArray8_new/_x/logs/link --report_dir /home/ld443/meng_project/SysArray8_new/_x/reports/link --config /home/ld443/meng_project/SysArray8_new/_x/link/int/vplConfig.ini -k /home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ld443/meng_project/SysArray8_new/_x/link --no-info --tlog_dir /home/ld443/meng_project/SysArray8_new/_x/.tlog/v++_link_SysArray --iprepo /home/ld443/meng_project/SysArray8_new/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0 --messageDb /home/ld443/meng_project/SysArray8_new/_x/link/run_link/vpl.pb /home/ld443/meng_project/SysArray8_new/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /home/ld443/meng_project/SysArray8_new/_x/link/run_link
+
+****** vpl v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat'.
+INFO: [VPL 60-423]   Target device: xilinx_u250_xdma_201830_2
+INFO: [VPL 60-1032] Extracting hardware platform to /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform
+[20:02:49] Run vpl: Step create_project: Started
+Creating Vivado project.
+[20:02:55] Run vpl: Step create_project: Completed
+[20:02:55] Run vpl: Step create_bd: Started
+[20:04:20] Run vpl: Step create_bd: RUNNING...
+[20:05:27] Run vpl: Step create_bd: Completed
+[20:05:27] Run vpl: Step update_bd: Started
+[20:05:35] Run vpl: Step update_bd: Completed
+[20:05:35] Run vpl: Step generate_target: Started
+[20:06:54] Run vpl: Step generate_target: RUNNING...
+[20:08:13] Run vpl: Step generate_target: RUNNING...
+[20:08:47] Run vpl: Step generate_target: Completed
+[20:08:47] Run vpl: Step config_hw_runs: Started
+[20:09:08] Run vpl: Step config_hw_runs: Completed
+[20:09:08] Run vpl: Step synth: Started
+[20:10:16] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[20:10:51] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[20:11:26] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[20:12:00] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[20:12:34] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[20:13:09] Block-level synthesis in progress, 0 of 85 jobs complete, 8 jobs running.
+[20:13:44] Block-level synthesis in progress, 2 of 85 jobs complete, 6 jobs running.
+[20:14:34] Block-level synthesis in progress, 6 of 85 jobs complete, 4 jobs running.
+[20:15:13] Block-level synthesis in progress, 8 of 85 jobs complete, 6 jobs running.
+[20:15:48] Block-level synthesis in progress, 8 of 85 jobs complete, 8 jobs running.
+[20:16:21] Block-level synthesis in progress, 8 of 85 jobs complete, 8 jobs running.
+[20:16:57] Block-level synthesis in progress, 8 of 85 jobs complete, 8 jobs running.
+[20:17:31] Block-level synthesis in progress, 8 of 85 jobs complete, 8 jobs running.
+[20:18:05] Block-level synthesis in progress, 8 of 85 jobs complete, 8 jobs running.
+[20:18:39] Block-level synthesis in progress, 14 of 85 jobs complete, 2 jobs running.
+[20:19:13] Block-level synthesis in progress, 18 of 85 jobs complete, 4 jobs running.
+[20:19:47] Block-level synthesis in progress, 20 of 85 jobs complete, 3 jobs running.
+[20:20:21] Block-level synthesis in progress, 21 of 85 jobs complete, 7 jobs running.
+[20:20:55] Block-level synthesis in progress, 21 of 85 jobs complete, 8 jobs running.
+[20:21:29] Block-level synthesis in progress, 21 of 85 jobs complete, 8 jobs running.
+[20:22:03] Block-level synthesis in progress, 21 of 85 jobs complete, 8 jobs running.
+[20:22:38] Block-level synthesis in progress, 21 of 85 jobs complete, 8 jobs running.
+[20:23:12] Block-level synthesis in progress, 23 of 85 jobs complete, 6 jobs running.
+[20:23:46] Block-level synthesis in progress, 25 of 85 jobs complete, 6 jobs running.
+[20:24:20] Block-level synthesis in progress, 27 of 85 jobs complete, 6 jobs running.
+[20:24:55] Block-level synthesis in progress, 28 of 85 jobs complete, 7 jobs running.
+[20:25:29] Block-level synthesis in progress, 29 of 85 jobs complete, 7 jobs running.
+[20:26:03] Block-level synthesis in progress, 29 of 85 jobs complete, 8 jobs running.
+[20:26:37] Block-level synthesis in progress, 29 of 85 jobs complete, 8 jobs running.
+[20:27:12] Block-level synthesis in progress, 30 of 85 jobs complete, 7 jobs running.
+[20:27:46] Block-level synthesis in progress, 31 of 85 jobs complete, 7 jobs running.
+[20:28:22] Block-level synthesis in progress, 35 of 85 jobs complete, 4 jobs running.
+[20:28:58] Block-level synthesis in progress, 38 of 85 jobs complete, 5 jobs running.
+[20:29:43] Block-level synthesis in progress, 39 of 85 jobs complete, 7 jobs running.
+[20:30:17] Block-level synthesis in progress, 39 of 85 jobs complete, 8 jobs running.
+[20:30:52] Block-level synthesis in progress, 40 of 85 jobs complete, 7 jobs running.
+[20:31:28] Block-level synthesis in progress, 40 of 85 jobs complete, 8 jobs running.
+[20:32:05] Block-level synthesis in progress, 40 of 85 jobs complete, 8 jobs running.
+[20:32:39] Block-level synthesis in progress, 42 of 85 jobs complete, 6 jobs running.
+[20:33:14] Block-level synthesis in progress, 45 of 85 jobs complete, 5 jobs running.
+[20:33:48] Block-level synthesis in progress, 47 of 85 jobs complete, 6 jobs running.
+[20:34:22] Block-level synthesis in progress, 48 of 85 jobs complete, 7 jobs running.
+[20:34:57] Block-level synthesis in progress, 49 of 85 jobs complete, 7 jobs running.
+[20:35:31] Block-level synthesis in progress, 49 of 85 jobs complete, 8 jobs running.
+[20:36:05] Block-level synthesis in progress, 49 of 85 jobs complete, 8 jobs running.
+[20:37:15] Block-level synthesis in progress, 53 of 85 jobs complete, 4 jobs running.
+[20:37:50] Block-level synthesis in progress, 55 of 85 jobs complete, 6 jobs running.
+[20:38:24] Block-level synthesis in progress, 56 of 85 jobs complete, 5 jobs running.
+[20:38:59] Block-level synthesis in progress, 57 of 85 jobs complete, 7 jobs running.
+[20:39:33] Block-level synthesis in progress, 58 of 85 jobs complete, 7 jobs running.
+[20:40:08] Block-level synthesis in progress, 59 of 85 jobs complete, 7 jobs running.
+[20:40:43] Block-level synthesis in progress, 60 of 85 jobs complete, 7 jobs running.
+[20:41:18] Block-level synthesis in progress, 62 of 85 jobs complete, 6 jobs running.
+[20:41:53] Block-level synthesis in progress, 62 of 85 jobs complete, 7 jobs running.
+[20:42:28] Block-level synthesis in progress, 63 of 85 jobs complete, 7 jobs running.
+[20:43:03] Block-level synthesis in progress, 63 of 85 jobs complete, 8 jobs running.
+[20:43:39] Block-level synthesis in progress, 65 of 85 jobs complete, 6 jobs running.
+[20:44:16] Block-level synthesis in progress, 65 of 85 jobs complete, 8 jobs running.
+[20:45:01] Block-level synthesis in progress, 66 of 85 jobs complete, 7 jobs running.
+[20:45:36] Block-level synthesis in progress, 68 of 85 jobs complete, 6 jobs running.
+[20:46:13] Block-level synthesis in progress, 69 of 85 jobs complete, 6 jobs running.
+[20:46:48] Block-level synthesis in progress, 72 of 85 jobs complete, 5 jobs running.
+[20:47:24] Block-level synthesis in progress, 75 of 85 jobs complete, 4 jobs running.
+[20:47:58] Block-level synthesis in progress, 75 of 85 jobs complete, 4 jobs running.
+[20:48:33] Block-level synthesis in progress, 77 of 85 jobs complete, 2 jobs running.
+[20:49:08] Block-level synthesis in progress, 78 of 85 jobs complete, 1 job running.
+[20:49:43] Block-level synthesis in progress, 78 of 85 jobs complete, 1 job running.
+[20:50:18] Block-level synthesis in progress, 84 of 85 jobs complete, 0 jobs running.
+[20:50:53] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[20:51:27] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[20:52:02] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[20:52:37] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[20:53:12] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[20:53:47] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[20:54:22] Block-level synthesis in progress, 84 of 85 jobs complete, 1 job running.
+[20:54:56] Block-level synthesis in progress, 85 of 85 jobs complete, 0 jobs running.
+[20:55:31] Top-level synthesis in progress.
+[20:56:05] Top-level synthesis in progress.
+[20:56:40] Top-level synthesis in progress.
+[20:57:14] Top-level synthesis in progress.
+[20:57:49] Top-level synthesis in progress.
+[20:58:23] Top-level synthesis in progress.
+[20:59:01] Top-level synthesis in progress.
+[20:59:42] Top-level synthesis in progress.
+[21:00:17] Top-level synthesis in progress.
+[21:00:51] Top-level synthesis in progress.
+[21:01:28] Top-level synthesis in progress.
+[21:02:03] Top-level synthesis in progress.
+[21:02:38] Top-level synthesis in progress.
+[21:03:18] Run vpl: Step synth: Completed
+[21:03:18] Run vpl: Step impl: Started
+[21:17:05] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 01h 15m 13s 
+
+[21:17:05] Starting logic optimization..
+[21:17:37] Phase 1 Generate And Synthesize MIG Cores
+[21:25:51] Phase 2 Generate And Synthesize Debug Cores
+[21:33:36] Phase 3 Retarget
+[21:34:08] Phase 4 Constant propagation
+[21:34:42] Phase 5 Sweep
+[21:35:14] Phase 6 BUFG optimization
+[21:35:47] Phase 7 Shift Register Optimization
+[21:35:47] Phase 8 Post Processing Netlist
+[21:37:26] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 20m 21s 
+
+[21:37:26] Starting logic placement..
+[21:38:32] Phase 1 Placer Initialization
+[21:38:32] Phase 1.1 Placer Initialization Netlist Sorting
+[21:41:50] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[21:44:43] Phase 1.3 Build Placer Netlist Model
+[21:46:58] Phase 1.4 Constrain Clocks/Macros
+[21:46:58] Phase 2 Global Placement
+[21:46:58] Phase 2.1 Floorplanning
+[21:49:42] Phase 2.2 Global Placement Core
+[21:58:32] Phase 2.2.1 Physical Synthesis In Placer
+[22:00:48] Phase 3 Detail Placement
+[22:00:48] Phase 3.1 Commit Multi Column Macros
+[22:00:48] Phase 3.2 Commit Most Macros & LUTRAMs
+[22:01:24] Phase 3.3 Area Swap Optimization
+[22:01:24] Phase 3.4 Pipeline Register Optimization
+[22:01:24] Phase 3.5 IO Cut Optimizer
+[22:01:24] Phase 3.6 Fast Optimization
+[22:01:57] Phase 3.7 Small Shape DP
+[22:01:57] Phase 3.7.1 Small Shape Clustering
+[22:03:03] Phase 3.7.2 Flow Legalize Slice Clusters
+[22:03:03] Phase 3.7.3 Slice Area Swap
+[22:03:37] Phase 3.7.4 Commit Slice Clusters
+[22:04:09] Phase 3.8 Place Remaining
+[22:04:09] Phase 3.9 Re-assign LUT pins
+[22:04:09] Phase 3.10 Pipeline Register Optimization
+[22:04:09] Phase 3.11 Fast Optimization
+[22:05:48] Phase 4 Post Placement Optimization and Clean-Up
+[22:05:48] Phase 4.1 Post Commit Optimization
+[22:06:21] Phase 4.1.1 Post Placement Optimization
+[22:06:54] Phase 4.1.1.1 BUFG Insertion
+[22:06:54] Phase 4.1.1.2 BUFG Replication
+[22:08:33] Phase 4.1.1.3 Replication
+[22:08:33] Phase 4.2 Post Placement Cleanup
+[22:10:12] Phase 4.3 Placer Reporting
+[22:10:12] Phase 4.4 Final Placement Cleanup
+[22:18:04] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 40m 38s 
+
+[22:18:04] Starting logic routing..
+[22:19:11] Phase 1 Build RT Design
+[22:30:49] Phase 2 Router Initialization
+[22:30:49] Phase 2.1 Create Timer
+[22:30:49] Phase 2.2 Fix Topology Constraints
+[22:30:49] Phase 2.3 Pre Route Cleanup
+[22:31:26] Phase 2.4 Global Clock Net Routing
+[22:31:59] Phase 2.5 Update Timing
+[22:34:11] Phase 2.6 Update Timing for Bus Skew
+[22:34:11] Phase 2.6.1 Update Timing
+[22:35:17] Phase 3 Initial Routing
+[22:35:51] Phase 4 Rip-up And Reroute
+[22:35:51] Phase 4.1 Global Iteration 0
+[22:40:15] Phase 4.2 Global Iteration 1
+[22:41:53] Phase 4.3 Global Iteration 2
+[22:43:00] Phase 4.4 Global Iteration 3
+[22:44:43] Phase 4.5 Global Iteration 4
+[22:45:49] Phase 4.6 Global Iteration 5
+[22:46:58] Phase 5 Delay and Skew Optimization
+[22:46:58] Phase 5.1 Delay CleanUp
+[22:46:58] Phase 5.1.1 Update Timing
+[22:47:30] Phase 5.1.2 Update Timing
+[22:48:36] Phase 5.2 Clock Skew Optimization
+[22:48:36] Phase 6 Post Hold Fix
+[22:48:36] Phase 6.1 Hold Fix Iter
+[22:48:36] Phase 6.1.1 Update Timing
+[22:49:42] Phase 7 Leaf Clock Prog Delay Opt
+[22:51:21] Phase 7.1 Delay CleanUp
+[22:51:21] Phase 7.1.1 Update Timing
+[22:51:53] Phase 7.1.2 Update Timing
+[22:53:00] Phase 7.2 Hold Fix Iter
+[22:53:00] Phase 7.2.1 Update Timing
+[22:54:40] Phase 8 Route finalize
+[22:55:12] Phase 9 Verifying routed nets
+[22:55:12] Phase 10 Depositing Routes
+[22:55:46] Phase 11 Post Router Timing
+[22:56:52] Phase 12 Physical Synthesis in Router
+[22:56:52] Phase 12.1 Physical Synthesis Initialization
+[22:57:58] Phase 12.2 Critical Path Optimization
+[22:59:07] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 41m 02s 
+
+[22:59:07] Starting bitstream generation..
+[23:09:04] Creating bitmap...
+[23:17:30] Writing bitstream ./pfm_top_i_dynamic_region_my_rm_partial.bit...
+[23:17:30] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 18m 23s 
+[23:18:18] Run vpl: Step impl: Completed
+[23:18:20] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [23:18:30] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:04:35 ; elapsed = 03:16:41 . Memory (MB): peak = 687.297 ; gain = 0.000 ; free physical = 131661 ; free virtual = 222892
+INFO: [v++ 60-1443] [23:18:30] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /home/ld443/meng_project/SysArray8_new/_x/link/run_link
+INFO: [v++ 60-991] clock name 'clkwiz_kernel_clk_out1' (clock ID '0') is being mapped to clock name 'DATA_CLK' in the xclbin
+INFO: [v++ 60-991] clock name 'clkwiz_kernel2_clk_out1' (clock ID '1') is being mapped to clock name 'KERNEL_CLK' in the xclbin
+INFO: [v++ 60-1230] The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): Kernel (DATA) clock: clkwiz_kernel_clk_out1 = 193, Kernel (KERNEL) clock: clkwiz_kernel2_clk_out1 = 500
+INFO: [v++ 60-1453] Command Line: cf2sw -a /home/ld443/meng_project/SysArray8_new/_x/link/int/address_map.xml -sdsl /home/ld443/meng_project/SysArray8_new/_x/link/int/sdsl.dat -xclbin /home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.xml -rtd /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd -o /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xml
+INFO: [v++ 60-1618] Launching 
+INFO: [v++ 60-1441] [23:18:34] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 687.297 ; gain = 0.000 ; free physical = 131655 ; free virtual = 222886
+INFO: [v++ 60-1443] [23:18:34] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/partial.bit --force --key-value SYS:mode:hw_pr --add-section :JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd --append-section :JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_xml.rtd --add-section BUILD_METADATA:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xml --add-section SYSTEM_METADATA:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModelSlrBaseAddress.json --output /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/ld443/meng_project/SysArray8_new/_x/link/run_link
+XRT Build Version: 2.3.1301
+       Build Date: 2019-10-25 03:04:42
+          Hash ID: 192e706aea53163a04c574f9b3fe9ed76b6ca471
+Creating a default 'in-memory' xclbin image.
+
+Section: 'DEBUG_IP_LAYOUT'(9) was successfully added.
+Size   : 296 bytes
+Format : JSON
+File   : '/home/ld443/meng_project/SysArray8_new/_x/link/int/debug_ip_layout.rtd'
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 55781149 bytes
+Format : RAW
+File   : '/home/ld443/meng_project/SysArray8_new/_x/link/int/partial.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was successfully added.
+Size   : 274 bytes
+Format : JSON
+File   : '/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 3263 bytes
+Format : JSON
+File   : '/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 3859 bytes
+Format : RAW
+File   : '/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 7431 bytes
+Format : RAW
+File   : '/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModelSlrBaseAddress.json'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (55805272 bytes) to the output file: /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [23:18:34] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.26 . Memory (MB): peak = 687.297 ; gain = 0.000 ; free physical = 131605 ; free virtual = 222889
+INFO: [v++ 60-1443] [23:18:34] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --info /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin.info --input /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/ld443/meng_project/SysArray8_new/_x/link/run_link
+INFO: [v++ 60-1441] [23:18:35] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.65 ; elapsed = 00:00:00.78 . Memory (MB): peak = 687.297 ; gain = 0.000 ; free physical = 131608 ; free virtual = 222892
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/ld443/meng_project/SysArray8_new/_x/reports/link/system_estimate_SysArray.xtxt
+INFO: [v++ 60-586] Created /home/ld443/meng_project/SysArray8_new/SysArray.ltx
+INFO: [v++ 60-586] Created SysArray.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /home/ld443/meng_project/SysArray8_new/_x/reports/link/v++_link_SysArray_guidance.html
+	Timing Report: /home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/xilinx_u250_xdma_201830_2_bb_locked_timing_summary_routed.rpt
+	Utilizations Report: /home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/kernel_util_routed.rpt
+	Vivado Log: /home/ld443/meng_project/SysArray8_new/_x/logs/link/vivado.log
+	Steps Log File: /home/ld443/meng_project/SysArray8_new/_x/logs/link/link.steps.log
+
+INFO: [v++ 60-791] Total elapsed time: 3h 17m 28s

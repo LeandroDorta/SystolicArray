@@ -1,0 +1,605 @@
+
+*** Running vivado
+    with args -log bd_ebbe_xsdbm_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ebbe_xsdbm_0.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bd_ebbe_xsdbm_0.tcl -notrace
+[OPTRACE]|114758|1|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590106994796|START|bd_ebbe_xsdbm_0_synth_1|ROLLUP_AUTO
+[OPTRACE]|114758|2|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590106994801|START|Creating in-memory project|
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4:pcie4_gt_if:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4:pcie4_gt_if_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:Monitor_AXI_Master:1.0'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/monitor_axi_master_v1_0' will take precedence over the same IP in location /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/monitor_axi_master_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie4_uscale_plus:1.3'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xdma:4.1'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_control:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_external_msix:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_mgmt:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_external:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_internal:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_pm:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_status:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_gt_if:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pcie_id:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pl:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_rbar:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:dsc_bypass:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/dsc_bypass.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/dsc_bypass.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_7x_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_7x_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_7x_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_ext_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/axi_pcie3_v3_0/interfaces/pcie3_us_ext_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:pcie3_us_gt_if:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie3_ultrascale_v4_4/interfaces/pcie3_us_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:int_shared_logic:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_int_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_int_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_us_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie4_us_plus_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_us_plus_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie4_us_plus_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_cfg_external_msix:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_debug_ports:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_debug_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_debug_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_status_ports:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_status_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_status_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:sdsoc_trace:2.0'. The one found in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/interfaces/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.699 ; gain = 190.789 ; free physical = 106104 ; free virtual = 200624
+[OPTRACE]|114758|3|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107009256|END|Creating in-memory project|
+[OPTRACE]|114758|4|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107009256|START|Adding files|
+[OPTRACE]|114758|5|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107010025|END|Adding files|
+[OPTRACE]|114758|6|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107010027|START|Configure IP Cache|
+[OPTRACE]|114758|7|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107010092|END|Configure IP Cache|
+[OPTRACE]|114758|8|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107010094|START|synth_design|
+Command: synth_design -top bd_ebbe_xsdbm_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 118189 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:31 . Memory (MB): peak = 2911.578 ; gain = 184.609 ; free physical = 109169 ; free virtual = 203751
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_ebbe_xsdbm_0' [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/synth/bd_ebbe_xsdbm_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+WARNING: [Synth 8-3848] Net update_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:1]
+WARNING: [Synth 8-3848] Net capture_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:2]
+WARNING: [Synth 8-3848] Net reset_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:3]
+WARNING: [Synth 8-3848] Net runtest_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:4]
+WARNING: [Synth 8-3848] Net tms_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:5]
+WARNING: [Synth 8-3848] Net tck_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:6]
+WARNING: [Synth 8-3848] Net tdi_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:7]
+WARNING: [Synth 8-3848] Net sel_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:8]
+WARNING: [Synth 8-3848] Net shift_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:9]
+WARNING: [Synth 8-3848] Net drck_0 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:10]
+WARNING: [Synth 8-3848] Net update_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:12]
+WARNING: [Synth 8-3848] Net capture_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:13]
+WARNING: [Synth 8-3848] Net reset_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:14]
+WARNING: [Synth 8-3848] Net runtest_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:15]
+WARNING: [Synth 8-3848] Net tms_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:16]
+WARNING: [Synth 8-3848] Net tck_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:17]
+WARNING: [Synth 8-3848] Net tdi_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:18]
+WARNING: [Synth 8-3848] Net sel_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:19]
+WARNING: [Synth 8-3848] Net shift_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:20]
+WARNING: [Synth 8-3848] Net drck_1 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:21]
+WARNING: [Synth 8-3848] Net update_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:23]
+WARNING: [Synth 8-3848] Net capture_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:24]
+WARNING: [Synth 8-3848] Net reset_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:25]
+WARNING: [Synth 8-3848] Net runtest_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:26]
+WARNING: [Synth 8-3848] Net tms_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:27]
+WARNING: [Synth 8-3848] Net tck_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:28]
+WARNING: [Synth 8-3848] Net tdi_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:29]
+WARNING: [Synth 8-3848] Net sel_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:30]
+WARNING: [Synth 8-3848] Net shift_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:31]
+WARNING: [Synth 8-3848] Net drck_2 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:32]
+WARNING: [Synth 8-3848] Net update_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:34]
+WARNING: [Synth 8-3848] Net capture_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:35]
+WARNING: [Synth 8-3848] Net reset_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:36]
+WARNING: [Synth 8-3848] Net runtest_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:37]
+WARNING: [Synth 8-3848] Net tms_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:38]
+WARNING: [Synth 8-3848] Net tck_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:39]
+WARNING: [Synth 8-3848] Net tdi_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:40]
+WARNING: [Synth 8-3848] Net sel_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:41]
+WARNING: [Synth 8-3848] Net shift_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:42]
+WARNING: [Synth 8-3848] Net drck_3 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:43]
+WARNING: [Synth 8-3848] Net update_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:45]
+WARNING: [Synth 8-3848] Net capture_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:46]
+WARNING: [Synth 8-3848] Net reset_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:47]
+WARNING: [Synth 8-3848] Net runtest_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:48]
+WARNING: [Synth 8-3848] Net tms_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:49]
+WARNING: [Synth 8-3848] Net tck_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:50]
+WARNING: [Synth 8-3848] Net tdi_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:51]
+WARNING: [Synth 8-3848] Net sel_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:52]
+WARNING: [Synth 8-3848] Net shift_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:53]
+WARNING: [Synth 8-3848] Net drck_4 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:54]
+WARNING: [Synth 8-3848] Net update_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:56]
+WARNING: [Synth 8-3848] Net capture_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:57]
+WARNING: [Synth 8-3848] Net reset_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:58]
+WARNING: [Synth 8-3848] Net runtest_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:59]
+WARNING: [Synth 8-3848] Net tms_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:60]
+WARNING: [Synth 8-3848] Net tck_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:61]
+WARNING: [Synth 8-3848] Net tdi_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:62]
+WARNING: [Synth 8-3848] Net sel_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:63]
+WARNING: [Synth 8-3848] Net shift_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:64]
+WARNING: [Synth 8-3848] Net drck_5 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:65]
+WARNING: [Synth 8-3848] Net update_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:67]
+WARNING: [Synth 8-3848] Net capture_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:68]
+WARNING: [Synth 8-3848] Net reset_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:69]
+WARNING: [Synth 8-3848] Net runtest_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:70]
+WARNING: [Synth 8-3848] Net tms_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:71]
+WARNING: [Synth 8-3848] Net tck_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:72]
+WARNING: [Synth 8-3848] Net tdi_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:73]
+WARNING: [Synth 8-3848] Net sel_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:74]
+WARNING: [Synth 8-3848] Net shift_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:75]
+WARNING: [Synth 8-3848] Net drck_6 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:76]
+WARNING: [Synth 8-3848] Net update_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:78]
+WARNING: [Synth 8-3848] Net capture_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:79]
+WARNING: [Synth 8-3848] Net reset_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:80]
+WARNING: [Synth 8-3848] Net runtest_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:81]
+WARNING: [Synth 8-3848] Net tms_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:82]
+WARNING: [Synth 8-3848] Net tck_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:83]
+WARNING: [Synth 8-3848] Net tdi_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:84]
+WARNING: [Synth 8-3848] Net sel_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:85]
+WARNING: [Synth 8-3848] Net shift_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:86]
+WARNING: [Synth 8-3848] Net drck_7 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:87]
+WARNING: [Synth 8-3848] Net update_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:89]
+WARNING: [Synth 8-3848] Net capture_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:90]
+WARNING: [Synth 8-3848] Net reset_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:91]
+WARNING: [Synth 8-3848] Net runtest_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:92]
+WARNING: [Synth 8-3848] Net tms_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:93]
+WARNING: [Synth 8-3848] Net tck_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:94]
+WARNING: [Synth 8-3848] Net tdi_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:95]
+WARNING: [Synth 8-3848] Net sel_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:96]
+WARNING: [Synth 8-3848] Net shift_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:97]
+WARNING: [Synth 8-3848] Net drck_8 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:98]
+WARNING: [Synth 8-3848] Net update_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:100]
+WARNING: [Synth 8-3848] Net capture_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:101]
+WARNING: [Synth 8-3848] Net reset_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:102]
+WARNING: [Synth 8-3848] Net runtest_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:103]
+WARNING: [Synth 8-3848] Net tms_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:104]
+WARNING: [Synth 8-3848] Net tck_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:105]
+WARNING: [Synth 8-3848] Net tdi_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:106]
+WARNING: [Synth 8-3848] Net sel_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:107]
+WARNING: [Synth 8-3848] Net shift_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:108]
+WARNING: [Synth 8-3848] Net drck_9 in module/entity xsdbm_v3_0_0_xsdbm_id does not have driver. [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/b205/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh:109]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'bd_ebbe_xsdbm_0' (4#1) [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/synth/bd_ebbe_xsdbm_0.v:58]
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_0
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_1
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_2
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_3
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_4
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_5
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_6
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_7
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_8
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port update_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port capture_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port reset_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port runtest_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tms_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tck_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port tdi_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port sel_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port shift_9
+WARNING: [Synth 8-3331] design xsdbm_v3_0_0_xsdbm_id has unconnected port drck_9
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:57 . Memory (MB): peak = 3080.246 ; gain = 353.277 ; free physical = 106898 ; free virtual = 201460
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:58 . Memory (MB): peak = 3080.246 ; gain = 353.277 ; free physical = 107282 ; free virtual = 201843
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:58 . Memory (MB): peak = 3080.246 ; gain = 353.277 ; free physical = 107281 ; free virtual = 201843
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3091.203 ; gain = 0.000 ; free physical = 108872 ; free virtual = 203434
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/bd_ebbe_xsdbm_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/bd_ebbe_xsdbm_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/constraints/xsdbm_cc_early.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/constraints/xsdbm_cc_early.xdc] for cell 'inst'
+Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/constraints/xsdbm_cc_late.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/constraints/xsdbm_cc_late.xdc] for cell 'inst'
+Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/constraints/xsdbm_gc_late.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_0/constraints/xsdbm_gc_late.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3169.918 ; gain = 0.000 ; free physical = 108020 ; free virtual = 202583
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3169.922 ; gain = 0.004 ; free physical = 108012 ; free virtual = 202574
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:01:21 . Memory (MB): peak = 3169.922 ; gain = 442.953 ; free physical = 107410 ; free virtual = 201980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:01:21 . Memory (MB): peak = 3169.922 ; gain = 442.953 ; free physical = 107408 ; free virtual = 201978
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:21 . Memory (MB): peak = 3169.922 ; gain = 442.953 ; free physical = 107454 ; free virtual = 202024
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:01:22 . Memory (MB): peak = 3169.930 ; gain = 442.961 ; free physical = 107457 ; free virtual = 202029
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xsdbm_v3_0_0_xsdbm_id 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:23 . Memory (MB): peak = 3169.930 ; gain = 442.961 ; free physical = 107328 ; free virtual = 201902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:03:19 . Memory (MB): peak = 3448.320 ; gain = 721.352 ; free physical = 102882 ; free virtual = 197465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:03:19 . Memory (MB): peak = 3448.320 ; gain = 721.352 ; free physical = 102892 ; free virtual = 197476
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:03:19 . Memory (MB): peak = 3458.336 ; gain = 731.367 ; free physical = 102916 ; free virtual = 197499
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin CAPTURE_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin UPDATE_temp_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin UPDATE_temp_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin UPDATE_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin SHIFT_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin RESET_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin TDI_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin SEL_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin DRCK_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin TDO_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin RUNTEST_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin TCK_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin TMS_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin bscanid_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin id_state_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin id_state_inferred:in0[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.215 ; gain = 746.246 ; free physical = 102842 ; free virtual = 197422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.215 ; gain = 746.246 ; free physical = 102839 ; free virtual = 197419
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.215 ; gain = 746.246 ; free physical = 102833 ; free virtual = 197413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.215 ; gain = 746.246 ; free physical = 102833 ; free virtual = 197413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.215 ; gain = 746.246 ; free physical = 102833 ; free virtual = 197413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.215 ; gain = 746.246 ; free physical = 102833 ; free virtual = 197413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |    47|
+|2     |FDRE |    11|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------+----------------------+------+
+|      |Instance                 |Module                |Cells |
++------+-------------------------+----------------------+------+
+|1     |top                      |                      |    58|
+|2     |  inst                   |xsdbm_v3_0_0_xsdbm    |    58|
+|3     |    \BSCANID.u_xsdbm_id  |xsdbm_v3_0_0_xsdbm_id |    58|
++------+-------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.215 ; gain = 746.246 ; free physical = 102833 ; free virtual = 197413
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 993 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:03:07 . Memory (MB): peak = 3473.215 ; gain = 656.570 ; free physical = 102862 ; free virtual = 197442
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:03:23 . Memory (MB): peak = 3473.219 ; gain = 746.246 ; free physical = 102862 ; free virtual = 197442
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3473.219 ; gain = 0.000 ; free physical = 102976 ; free virtual = 197556
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3551.816 ; gain = 0.000 ; free physical = 103301 ; free virtual = 197882
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 235 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:04:26 . Memory (MB): peak = 3551.816 ; gain = 1747.117 ; free physical = 103422 ; free virtual = 198003
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+[OPTRACE]|114758|9|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107276060|END|synth_design|
+[OPTRACE]|114758|10|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107276061|START|Write IP Cache|
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3551.816 ; gain = 0.000 ; free physical = 103414 ; free virtual = 197995
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ebbe_xsdbm_0, cache-ID = cb87f91c927a0b08
+[OPTRACE]|114758|11|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107277637|END|Write IP Cache|
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+[OPTRACE]|114758|12|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107277638|START|write_checkpoint|CHECKPOINT
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3551.824 ; gain = 0.000 ; free physical = 103361 ; free virtual = 197949
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.dcp' has been generated.
+[OPTRACE]|114758|13|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107278090|END|write_checkpoint|
+[OPTRACE]|114758|14|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107278090|START|synth_report|REPORT
+INFO: [runtcl-4] Executing : report_utilization -file bd_ebbe_xsdbm_0_utilization_synth.rpt -pb bd_ebbe_xsdbm_0_utilization_synth.pb
+[OPTRACE]|114758|15|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107278544|END|synth_report|
+[OPTRACE]|114758|16|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_xsdbm_0_synth_1/bd_ebbe_xsdbm_0.tcl|vivado_synth|1590107279292|END|bd_ebbe_xsdbm_0_synth_1|
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 20:27:59 2020...

@@ -1,0 +1,564 @@
+
+*** Running vivado
+    with args -log pfm_dynamic_freq_counter_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pfm_dynamic_freq_counter_0_0.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source pfm_dynamic_freq_counter_0_0.tcl -notrace
+[OPTRACE]|119253|1|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107112919|START|pfm_dynamic_freq_counter_0_0_synth_1|ROLLUP_AUTO
+[OPTRACE]|119253|2|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107112926|START|Creating in-memory project|
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4:pcie4_gt_if:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4:pcie4_gt_if_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:Monitor_AXI_Master:1.0'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/monitor_axi_master_v1_0' will take precedence over the same IP in location /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/monitor_axi_master_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie4_uscale_plus:1.3'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xdma:4.1'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_control:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_external_msix:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_mgmt:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_external:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_internal:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_pm:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_status:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_gt_if:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pcie_id:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pl:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_rbar:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:dsc_bypass:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/dsc_bypass.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/dsc_bypass.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_7x_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_7x_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_7x_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_ext_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/axi_pcie3_v3_0/interfaces/pcie3_us_ext_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:pcie3_us_gt_if:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie3_ultrascale_v4_4/interfaces/pcie3_us_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:int_shared_logic:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_int_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_int_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_us_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie4_us_plus_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_us_plus_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie4_us_plus_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_cfg_external_msix:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_debug_ports:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_debug_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_debug_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_status_ports:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_status_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_status_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:sdsoc_trace:2.0'. The one found in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/interfaces/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1804.223 ; gain = 189.820 ; free physical = 107046 ; free virtual = 201608
+[OPTRACE]|119253|3|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107127987|END|Creating in-memory project|
+[OPTRACE]|119253|4|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107127988|START|Adding files|
+[OPTRACE]|119253|5|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107128475|END|Adding files|
+[OPTRACE]|119253|6|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107128476|START|Configure IP Cache|
+[OPTRACE]|119253|7|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107128485|END|Configure IP Cache|
+[OPTRACE]|119253|8|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107128486|START|synth_design|
+Command: synth_design -top pfm_dynamic_freq_counter_0_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 121784 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2908.055 ; gain = 183.578 ; free physical = 104775 ; free virtual = 199356
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pfm_dynamic_freq_counter_0_0' [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_freq_counter_0_0/synth/pfm_dynamic_freq_counter_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'freq_counter' [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/5634/src/freq_counter.v:52]
+	Parameter REF_CLK_FREQ_HZ bound to: 50925 - type: integer 
+	Parameter IDLE_WRITE bound to: 3'b001 
+	Parameter WAIT_FOR_WVALID_WRITE bound to: 3'b010 
+	Parameter WAIT_FOR_BREADY_WRITE bound to: 3'b100 
+	Parameter IDLE_READ bound to: 2'b01 
+	Parameter WAIT_FOR_RVALID_READ bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:958]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (1#1) [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (1#1) [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/5634/src/freq_counter.v:256]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/5634/src/freq_counter.v:303]
+INFO: [Synth 8-6155] done synthesizing module 'freq_counter' (2#1) [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ipshared/5634/src/freq_counter.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'pfm_dynamic_freq_counter_0_0' (3#1) [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_freq_counter_0_0/synth/pfm_dynamic_freq_counter_0_0.v:58]
+WARNING: [Synth 8-3331] design xpm_cdc_array_single__parameterized0 has unconnected port src_clk
+WARNING: [Synth 8-3331] design xpm_cdc_array_single has unconnected port src_clk
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[31]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[30]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[29]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[28]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[27]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[26]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[25]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[24]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[23]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[22]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[21]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[20]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[19]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[18]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[17]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[16]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[15]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[14]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[13]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[12]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[11]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[10]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[9]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[8]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[7]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[6]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[5]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awaddr[4]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awprot[2]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awprot[1]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_awprot[0]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_wstrb[3]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_wstrb[2]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_wstrb[1]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_wstrb[0]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[31]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[30]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[29]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[28]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[27]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[26]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[25]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[24]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[23]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[22]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[21]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[20]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[19]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[18]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[17]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[16]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[15]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[14]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[13]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[12]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[11]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[10]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[9]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[8]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[7]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[6]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[5]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_araddr[4]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_arprot[2]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_arprot[1]
+WARNING: [Synth 8-3331] design freq_counter has unconnected port axil_arprot[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2973.785 ; gain = 249.309 ; free physical = 104522 ; free virtual = 199103
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2976.746 ; gain = 252.270 ; free physical = 104393 ; free virtual = 198975
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2976.746 ; gain = 252.270 ; free physical = 104393 ; free virtual = 198975
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2976.746 ; gain = 0.000 ; free physical = 104380 ; free virtual = 198962
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst'
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst1'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst1'
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst2'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst2'
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst5'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst5'
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst6'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst6'
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst7'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst7'
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst3'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst3'
+Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst4'
+Finished Sourcing Tcl File [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl] for cell 'inst/xpm_cdc_array_single_inst4'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pfm_dynamic_freq_counter_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pfm_dynamic_freq_counter_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3120.309 ; gain = 0.000 ; free physical = 103185 ; free virtual = 197767
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3120.312 ; gain = 0.004 ; free physical = 103184 ; free virtual = 197766
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3120.312 ; gain = 395.836 ; free physical = 103173 ; free virtual = 197755
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3120.312 ; gain = 395.836 ; free physical = 103170 ; free virtual = 197753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/xpm_cdc_array_single_inst4. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3120.312 ; gain = 395.836 ; free physical = 103170 ; free virtual = 197752
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'freq_counter'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'freq_counter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              IDLE_WRITE |                              001 |                              001
+   WAIT_FOR_WVALID_WRITE |                              010 |                              010
+   WAIT_FOR_BREADY_WRITE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_write_reg' in module 'freq_counter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               IDLE_READ |                               01 |                               01
+    WAIT_FOR_RVALID_READ |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_read_reg' in module 'freq_counter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 3120.320 ; gain = 395.844 ; free physical = 103144 ; free virtual = 197727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xpm_cdc_array_single 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module xpm_cdc_array_single__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module freq_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design pfm_dynamic_freq_counter_0_0 has port axil_bresp[1] driven by constant 0
+INFO: [Synth 8-3917] design pfm_dynamic_freq_counter_0_0 has port axil_bresp[0] driven by constant 0
+INFO: [Synth 8-3917] design pfm_dynamic_freq_counter_0_0 has port axil_rresp[1] driven by constant 0
+INFO: [Synth 8-3917] design pfm_dynamic_freq_counter_0_0 has port axil_rresp[0] driven by constant 0
+WARNING: [Synth 8-3331] design xpm_cdc_array_single__parameterized0 has unconnected port src_clk
+WARNING: [Synth 8-3331] design xpm_cdc_array_single has unconnected port src_clk
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[31]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[30]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[29]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[28]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[27]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[26]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[25]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[24]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[23]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[22]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[21]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[20]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[19]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[18]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[17]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[16]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[15]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[14]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[13]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[12]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[11]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[10]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[9]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[8]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[7]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[6]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[5]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awaddr[4]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awprot[2]
+WARNING: [Synth 8-3331] design pfm_dynamic_freq_counter_0_0 has unconnected port axil_awprot[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 3120.320 ; gain = 395.844 ; free physical = 103112 ; free virtual = 197694
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:02:26 . Memory (MB): peak = 3466.891 ; gain = 742.414 ; free physical = 111161 ; free virtual = 205738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:02:26 . Memory (MB): peak = 3466.891 ; gain = 742.414 ; free physical = 111162 ; free virtual = 205738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:02:27 . Memory (MB): peak = 3486.914 ; gain = 762.438 ; free physical = 111150 ; free virtual = 205726
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.855 ; gain = 768.379 ; free physical = 110884 ; free virtual = 205461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.855 ; gain = 768.379 ; free physical = 110883 ; free virtual = 205460
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.855 ; gain = 768.379 ; free physical = 110900 ; free virtual = 205477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.855 ; gain = 768.379 ; free physical = 110901 ; free virtual = 205478
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.855 ; gain = 768.379 ; free physical = 110876 ; free virtual = 205452
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.855 ; gain = 768.379 ; free physical = 110872 ; free virtual = 205449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    12|
+|2     |LUT1   |     7|
+|3     |LUT2   |     4|
+|4     |LUT3   |     2|
+|5     |LUT4   |    10|
+|6     |LUT5   |     8|
+|7     |LUT6   |    69|
+|8     |FDRE   |   279|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------------------------+------+
+|      |Instance                       |Module                                  |Cells |
++------+-------------------------------+----------------------------------------+------+
+|1     |top                            |                                        |   393|
+|2     |  inst                         |freq_counter                            |   393|
+|3     |    xpm_cdc_array_single_inst  |xpm_cdc_array_single__6                 |     2|
+|4     |    xpm_cdc_array_single_inst5 |xpm_cdc_array_single__7                 |     2|
+|5     |    xpm_cdc_array_single_inst1 |xpm_cdc_array_single__8                 |     2|
+|6     |    xpm_cdc_array_single_inst6 |xpm_cdc_array_single__9                 |     2|
+|7     |    xpm_cdc_array_single_inst2 |xpm_cdc_array_single__10                |     2|
+|8     |    xpm_cdc_array_single_inst7 |xpm_cdc_array_single                    |     2|
+|9     |    xpm_cdc_array_single_inst3 |xpm_cdc_array_single__parameterized0__2 |    64|
+|10    |    xpm_cdc_array_single_inst4 |xpm_cdc_array_single__parameterized0    |    64|
++------+-------------------------------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.855 ; gain = 768.379 ; free physical = 110868 ; free virtual = 205444
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:02:19 . Memory (MB): peak = 3492.855 ; gain = 624.812 ; free physical = 110845 ; free virtual = 205421
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:02:31 . Memory (MB): peak = 3492.859 ; gain = 768.379 ; free physical = 110844 ; free virtual = 205420
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3498.793 ; gain = 0.000 ; free physical = 110791 ; free virtual = 205368
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3569.457 ; gain = 0.000 ; free physical = 110502 ; free virtual = 205078
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 136 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:03:35 . Memory (MB): peak = 3569.457 ; gain = 1765.234 ; free physical = 110556 ; free virtual = 205133
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+[OPTRACE]|119253|9|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107343456|END|synth_design|
+[OPTRACE]|119253|10|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107343456|START|Write IP Cache|
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3569.457 ; gain = 0.000 ; free physical = 110547 ; free virtual = 205123
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pfm_dynamic_freq_counter_0_0, cache-ID = d7973f97afeccdd0
+[OPTRACE]|119253|11|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107345165|END|Write IP Cache|
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+[OPTRACE]|119253|12|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107345166|START|write_checkpoint|CHECKPOINT
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3569.465 ; gain = 0.000 ; free physical = 110438 ; free virtual = 205014
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.dcp' has been generated.
+[OPTRACE]|119253|13|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107345777|END|write_checkpoint|
+[OPTRACE]|119253|14|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107345777|START|synth_report|REPORT
+INFO: [runtcl-4] Executing : report_utilization -file pfm_dynamic_freq_counter_0_0_utilization_synth.rpt -pb pfm_dynamic_freq_counter_0_0_utilization_synth.pb
+[OPTRACE]|119253|15|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107346246|END|synth_report|
+[OPTRACE]|119253|16|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/pfm_dynamic_freq_counter_0_0_synth_1/pfm_dynamic_freq_counter_0_0.tcl|vivado_synth|1590107346952|END|pfm_dynamic_freq_counter_0_0_synth_1|
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 20:29:07 2020...

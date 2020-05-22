@@ -1,0 +1,402 @@
+
+*** Running vivado
+    with args -log bd_ebbe_lut_buffer_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ebbe_lut_buffer_0.tcl
+
+
+****** Vivado v2019.2.1 (64-bit)
+  **** SW Build 2729669 on Thu Dec  5 04:48:12 MST 2019
+  **** IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bd_ebbe_lut_buffer_0.tcl -notrace
+[OPTRACE]|148247|1|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107896922|START|bd_ebbe_lut_buffer_0_synth_1|ROLLUP_AUTO
+[OPTRACE]|148247|2|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107896926|START|Creating in-memory project|
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0'.
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4:pcie4_gt_if:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4:pcie4_gt_if_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_gt_if_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_ext_gtcom_rtl.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'xilinx.com:display_pcie4_uscaleplus:int_gtcom_rtl:1.0' found within IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+File in use: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom_rtl.xml
+File ignored: /home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_usp_int_gtcom_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:Monitor_AXI_Master:1.0'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/monitor_axi_master_v1_0' will take precedence over the same IP in location /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/monitor_axi_master_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pcie4_uscale_plus:1.3'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:xdma:4.1'. The one found in IP location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_control:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_control.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_external_msix:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_mgmt:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_mgmt.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_external:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_msix_internal:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_msix_int.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_pm:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_pm.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_cfg_status:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_cfg_status.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_gt_if:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pcie_id:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pcie_id.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_pl:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_pl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4:pcie4_rbar:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_rbar.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:ext_gtcom:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_ext_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:int_gtcom:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/pcie4_usp_int_gtcom.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie4_uscaleplus:transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie4_uscale_plus_v1_3/interfaces/transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:dsc_bypass:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/dsc_bypass.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/dsc_bypass.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_7x_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_7x_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_7x_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:ext_shared_logic:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_ext_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/axi_pcie3_v3_0/interfaces/pcie3_us_ext_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_pcie3_ultrascale:pcie3_us_gt_if:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_gt_if.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/pcie3_ultrascale_v4_4/interfaces/pcie3_us_gt_if.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:int_shared_logic:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_int_shared_logic.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_int_shared_logic.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie3_us_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie3_us_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie3_us_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie4_us_plus_transceiver_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie4_us_plus_transceiver_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie4_us_plus_transceiver_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_cfg_external_msix:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/xdma_v4_1/interfaces/pcie_cfg_ext_msix.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:pcie_debug:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/pcie_debug.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/pcie_debug.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_debug_ports:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_debug_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_debug_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_xdma:xdma_status_ports:1.0'. The one found in location '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/.local/hw_platform/iprepo/iprepo/xdma_v4_1/interfaces/xdma_status_ports.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/xilinx/qdma_v3_0/interfaces/xdma_status_ports.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:interface:sdsoc_trace:2.0'. The one found in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/ip/xilinx/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml' will take precedence over the same Interface in location '/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/data/ip/interfaces/sdsoc_trace_v2_0/sdsoc_trace_v2_0.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1804.250 ; gain = 189.789 ; free physical = 104475 ; free virtual = 199206
+[OPTRACE]|148247|3|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107911915|END|Creating in-memory project|
+[OPTRACE]|148247|4|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107911916|START|Adding files|
+[OPTRACE]|148247|5|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107912381|END|Adding files|
+[OPTRACE]|148247|6|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107912382|START|Configure IP Cache|
+[OPTRACE]|148247|7|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107912390|END|Configure IP Cache|
+[OPTRACE]|148247|8|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590107912391|START|synth_design|
+Command: synth_design -top bd_ebbe_lut_buffer_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 151451 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2908.113 ; gain = 183.609 ; free physical = 101494 ; free virtual = 196257
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_ebbe_lut_buffer_0' [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_1/synth/bd_ebbe_lut_buffer_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39089]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (1#1) [/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39089]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ebbe_lut_buffer_0' (3#1) [/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_debug_bridge_xsdbm_0/bd_0/ip/ip_1/synth/bd_ebbe_lut_buffer_0.v:57]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[31]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[30]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[29]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[28]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[27]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[26]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[25]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[24]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[23]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[22]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[21]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[20]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[19]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[18]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[17]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[16]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[15]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[14]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[13]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[12]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[11]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[10]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[9]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[8]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[7]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[6]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[5]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[4]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[3]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[2]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[1]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2973.844 ; gain = 249.340 ; free physical = 101394 ; free virtual = 196156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2977.805 ; gain = 253.301 ; free physical = 101342 ; free virtual = 196105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2977.805 ; gain = 253.301 ; free physical = 101342 ; free virtual = 196105
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2998.676 ; gain = 0.000 ; free physical = 101380 ; free virtual = 196143
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3021.551 ; gain = 0.000 ; free physical = 100502 ; free virtual = 195271
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3031.461 ; gain = 9.910 ; free physical = 100387 ; free virtual = 195157
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 3031.465 ; gain = 306.961 ; free physical = 100535 ; free virtual = 195288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 3031.465 ; gain = 306.961 ; free physical = 100534 ; free virtual = 195286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 3031.465 ; gain = 306.961 ; free physical = 100534 ; free virtual = 195286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 3031.473 ; gain = 306.969 ; free physical = 100530 ; free virtual = 195283
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[31]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[30]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[29]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[28]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[27]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[26]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[25]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[24]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[23]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[22]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[21]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[20]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[19]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[18]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[17]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[16]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[15]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[14]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[13]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[12]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[11]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[10]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[9]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[8]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[7]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[6]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[5]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[4]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[3]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[2]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[1]
+WARNING: [Synth 8-3331] design lut_buffer_v2_0_0_lut_buffer has unconnected port bscanid_i[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 3031.473 ; gain = 306.969 ; free physical = 100728 ; free virtual = 195479
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:02:24 . Memory (MB): peak = 3443.027 ; gain = 718.523 ; free physical = 98101 ; free virtual = 193125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:02:24 . Memory (MB): peak = 3443.027 ; gain = 718.523 ; free physical = 98101 ; free virtual = 193125
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:02:24 . Memory (MB): peak = 3453.035 ; gain = 728.531 ; free physical = 98099 ; free virtual = 193123
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.914 ; gain = 742.410 ; free physical = 98025 ; free virtual = 193048
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.914 ; gain = 742.410 ; free physical = 98025 ; free virtual = 193048
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.914 ; gain = 742.410 ; free physical = 98026 ; free virtual = 193049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.914 ; gain = 742.410 ; free physical = 98026 ; free virtual = 193049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.914 ; gain = 742.410 ; free physical = 98026 ; free virtual = 193049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.914 ; gain = 742.410 ; free physical = 98026 ; free virtual = 193049
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-----------------------------+------+
+|      |Instance |Module                       |Cells |
++------+---------+-----------------------------+------+
+|1     |top      |                             |     1|
+|2     |  inst   |lut_buffer_v2_0_0_lut_buffer |     1|
++------+---------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.914 ; gain = 742.410 ; free physical = 98026 ; free virtual = 193049
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:02:16 . Memory (MB): peak = 3466.914 ; gain = 688.750 ; free physical = 98045 ; free virtual = 193069
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:02:28 . Memory (MB): peak = 3466.918 ; gain = 742.410 ; free physical = 98044 ; free virtual = 193067
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3466.918 ; gain = 0.000 ; free physical = 98041 ; free virtual = 193065
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3547.484 ; gain = 0.000 ; free physical = 97885 ; free virtual = 192908
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:03:32 . Memory (MB): peak = 3547.484 ; gain = 1743.234 ; free physical = 97999 ; free virtual = 193023
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+[OPTRACE]|148247|9|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108124801|END|synth_design|
+[OPTRACE]|148247|10|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108124802|START|Write IP Cache|
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3547.484 ; gain = 0.000 ; free physical = 97993 ; free virtual = 193017
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ebbe_lut_buffer_0, cache-ID = f88df76ec589aa07
+[OPTRACE]|148247|11|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108126071|END|Write IP Cache|
+[OPTRACE]|148247|12|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108126072|START|write_checkpoint|CHECKPOINT
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3547.492 ; gain = 0.000 ; free physical = 97976 ; free virtual = 193000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.dcp' has been generated.
+[OPTRACE]|148247|13|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108126460|END|write_checkpoint|
+[OPTRACE]|148247|14|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108126460|START|synth_report|REPORT
+INFO: [runtcl-4] Executing : report_utilization -file bd_ebbe_lut_buffer_0_utilization_synth.rpt -pb bd_ebbe_lut_buffer_0_utilization_synth.pb
+[OPTRACE]|148247|15|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108126900|END|synth_report|
+[OPTRACE]|148247|16|/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/prj/prj.runs/bd_ebbe_lut_buffer_0_synth_1/bd_ebbe_lut_buffer_0.tcl|vivado_synth|1590108127578|END|bd_ebbe_lut_buffer_0_synth_1|
+INFO: [Common 17-206] Exiting Vivado at Thu May 21 20:42:07 2020...

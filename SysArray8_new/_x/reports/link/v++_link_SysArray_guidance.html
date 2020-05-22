@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Design Guidance Report</title>
+<link rel="stylesheet" href="file:///opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/rulecheck/rulecheck.css">
+<script type="text/javascript" src="file:///opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/data/rulecheck/rulecheck.js"></script>
+</head><body>
+<center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
+<tr><td><b>Copyright</b></td><td>Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.</td></tr>
+<tr><td><b>Tool Version</b></td><td>xrcserver v.2019.2.1 (lin64) Build 0 </td></tr>
+<tr><td><b>Date</b></td><td>Thu May 21 23:18:40 2020</td></tr>
+<tr><td><b>Host</b></td><td>brg-zhang-xcel.ece.cornell.edu running 64-bit CentOS Linux release 7.7.1908 (Core)</td></tr>
+<tr><td><b>Command</b></td><td>v++  -t hw -lo SysArray.xclbin SysArray.xo --platform xilinx_u250_xdma_201830_2 -k SysArray --kernel_frequency 255 </td></tr>
+</table></center><br>
+<table class="toc" border="1"><tr><td><b>Table of Contents</b></td></tr>
+<tr><td><a href="#REPORT SUMMARY">1 REPORT SUMMARY</a></tr></td>
+<tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
+<tr><td><a href="#CONFIG FILE DETAILS">3 CONFIG FILE DETAILS</a></tr></td>
+<tr><td><a href="#PERFORMANCE CHECKS MET">4 PERFORMANCE CHECKS MET</a></tr></td>
+</table>
+<a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
+<pre>Violations found: 1
+</pre>
+<pre>Rule Specs Violated: 1
+</pre>
+<pre>Rules Met: 3
+</pre>
+<pre>Rule Specs Met: 3
+</pre>
+<a name="VIOLATION DETAILS"></a><h1>2 VIOLATION DETAILS</h1>
+<table border="1">
+<caption>Items that may require attention</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left">Severity</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="380">Resolution</th>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">AUTO-FREQ-SCALING-04</td>
+<td align="left">warning</td>
+<td align="left">Auto frequency scaling - Kernel timing failure</td>
+<td align="left">Accelerator.SysArray.Performance</td>
+<td align="left">One or more timing paths failed timing requirements. The kernel clock clkwiz_kernel_clk_out1 has an original frequency equal to 255 MHz. The frequency has been automatically changed to 193.4 MHz to enable proper functionality. The clock Id is 0.</td>
+<td align="left">The automatic frequency scaling feature allows user kernels to operate in hardware, even if at a lower frequency than intended. <a href="https://www.xilinx.com/cgi-bin/docs/rdoc?t=vitis+guidance;v=2019.2;d=AUTO-FREQ-SCALING-04.html">This page</a> describes how to examine timing path violations.</td>
+</tr>
+</table>
+<br>
+<a name="CONFIG FILE DETAILS"></a><h1>3 CONFIG FILE DETAILS</h1>
+<pre>Config files found: 0
+</pre>
+<a name="PERFORMANCE CHECKS MET"></a><h1>4 PERFORMANCE CHECKS MET</h1>
+<table border="1">
+<caption>Items that offer design performance insight</caption>
+<tr class="ns-sort">
+<th align="left">Id</th>
+<th align="left">Name</th>
+<th align="left" width="170">Full Name</th>
+<th align="left">Categories</th>
+<th align="left">Actual</th>
+<th align="left">Threshold</th>
+<th align="left" width="350">Details</th>
+<th align="left" width="320">Rule Description</th>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">SYSLINK-1</td>
+<td align="left">system_link Top Level BD Creation</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Created top level block diagram design dr.bd.tcl</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">AUTO-FREQ-SCALING-03</td>
+<td align="left">Auto frequency scaling - Kernel clock maximum (MHz)</td>
+<td align="left">Accelerator.SysArray.Performance</td>
+<td align="left">1054.8</td>
+<td align="left">= or > 500</td>
+<td align="left">The maximum frequency supported by the runtime is 500 MHz, which this design achieved. The kernel clock clkwiz_kernel2_clk_out1 has an original frequency equal to 500.0 MHz. The auto scaled frequency 1054.8 MHz exceeds the maximum frequency limit supported by the runtime. The compiler will not select a frequency value higher than the runtime maximum.</td>
+<td align="left"><html>min(auto scaled freq, max runtime supported freq)</html></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">PLATFORM-CLOCK-DOMAINS-01</td>
+<td align="left">Runtime controllable clock domains - Achieved clock frequency (MHz)</td>
+<td align="left">Accelerator.System.Performance</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">The compiler selected the following frequencies for the runtime controllable kernel clock(s) and scalable system clock(s): 
+Kernel: clkwiz_kernel_clk_out1 = 193.4 MHz 
+Kernel: clkwiz_kernel2_clk_out1 = 500 MHz 
+Scalable clock clkwiz_kernel_clk_out1 (Id = 0) is used for hls kernels. This design has 0 hls kernel(s).
+Scalable clock clkwiz_kernel2_clk_out1 (Id = 1) is used for rtl kernels. This design has 1 rtl kernel(s).</td>
+<td align="left"><html> Kernel clocks (and system clocks for some platforms) are scalable; they can preserve functionality at the cost of performance by running at a lower frequency than requested. To be scalable, a clock must be driven by an MMCM where the control registers for the MMCM can be set by the runtime over AXI4-Lite. This item shows the final runtime controlled frequencies for the scalable clocks.</html></td>
+</tr>
+</table>
+<br>
+</body></html>

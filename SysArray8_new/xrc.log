@@ -1,0 +1,13 @@
+Thu May 21 20:01:15 2020: Server was asked to start on port: '45028'
+Thu May 21 20:01:15 2020: Server is using token UUID: '8ed421ff-409a-4a6c-91e5-f29716d0d974'
+Thu May 21 20:01:15 2020: Attempting to start server on port '45028'
+Thu May 21 20:01:15 2020: XRC main fifo: created main fifo '/tmp/xrcmain8ed421ff-409a-4a6c-91e5-f29716d0d974', fd read = 12
+Thu May 21 20:01:15 2020: Running Rule Check Server
+Thu May 21 20:01:15 2020: Version 1.5.1
+Thu May 21 20:01:15 2020: Rule Check Server: Accepted socket connection from client
+Thu May 21 20:01:15 2020: EXCHANGE_TOKEN received, server token: 8ed421ff-409a-4a6c-91e5-f29716d0d974, passed token: 8ed421ff-409a-4a6c-91e5-f29716d0d974
+Thu May 21 20:01:15 2020: SESSION_MGR: creating session with session uuid: '6ab6b17b-b724-4b2d-9d7a-7da7c09ef860' and name 'v++_link_SysArray'
+Thu May 21 20:01:30 2020: Rule Check Server: Accepted socket connection from client
+Thu May 21 20:02:49 2020: Rule Check Server: Accepted socket connection from client
+Thu May 21 21:03:36 2020: Rule Check Server: Accepted socket connection from client
+Thu May 21 23:18:40 2020: SESSION_MGR: closing session for UUID '6ab6b17b-b724-4b2d-9d7a-7da7c09ef860' with name 'v++_link_SysArray'

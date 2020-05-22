@@ -1,0 +1,1659 @@
+<ENTRY>
+{
+ "session": {
+  "name": "v++_link_SysArray",
+  "pid": "0",
+  "uuid": "26b125b7-5a4f-465d-978d-2c8a300385f4",
+  "description": "",
+  "timestamp": "0",
+  "outputFiles": [
+   {
+    "type": "JSON",
+    "mode": "CLIENT_ONLY",
+    "path": "/home/ld443/meng_project/SysArray8_new/_x/.tlog/v++_link_SysArray.xtl",
+    "continuous": true
+   },
+   {
+    "type": "JSON",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/home/ld443/meng_project/SysArray8_new/SysArray.xclbin.link_summary",
+    "continuous": true
+   },
+   {
+    "type": "BINARY_PROTOBUF",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/home/ld443/meng_project/SysArray8_new/SysArray.xclbin.link_summary.pb",
+    "continuous": true
+   }
+  ]
+ },
+ "thisFile": "/home/ld443/meng_project/SysArray8_new/SysArray.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu May 21 20:01:12 2020",
+ "timestampMillis": "1590105672479",
+ "buildStep": {
+  "cmdId": "f0fc6589-9582-43d0-9354-dca61907370e",
+  "name": "v++",
+  "logFile": "/home/ld443/meng_project/SysArray8_new/_x/link/link.steps.log",
+  "commandLine": "/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw -lo SysArray.xclbin SysArray.xo --platform xilinx_u250_xdma_201830_2 -k SysArray --kernel_frequency 255 ",
+  "args": [
+   "-t",
+   "hw",
+   "-lo",
+   "SysArray.xclbin",
+   "SysArray.xo",
+   "--platform",
+   "xilinx_u250_xdma_201830_2",
+   "-k",
+   "SysArray",
+   "--kernel_frequency",
+   "255"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:12 2020",
+ "timestampMillis": "1590105672481",
+ "status": {
+  "cmdId": "f0fc6589-9582-43d0-9354-dca61907370e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu May 21 20:01:26 2020",
+ "timestampMillis": "1590105686834",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_xdma_201830_2.xpfm",
+  "hardwareDsa": "xilinx_u250_xdma_201830_2.dsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_xdma_201830_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "SysArray",
+    "file": "/home/ld443/meng_project/SysArray8_new/SysArray.xclbin",
+    "reports": []
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "SysArray",
+     "file": "/home/ld443/meng_project/SysArray8_new/SysArray.xo",
+     "reports": []
+    },
+    "sources": [],
+    "cuNames": [
+     "SysArray_1"
+    ]
+   }
+  ]
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 20:01:27 2020",
+ "timestampMillis": "1590105687154",
+ "buildStep": {
+  "cmdId": "cf1f5116-3938-4d9e-a5cf-f7ba39c88797",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/ld443/meng_project/SysArray8_new/SysArray.xo --xpfm /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --target hw --output_dir /home/ld443/meng_project/SysArray8_new/_x/link/int --temp_dir /home/ld443/meng_project/SysArray8_new/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/ld443/meng_project/SysArray8_new/SysArray.xo",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int",
+   "--temp_dir",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/sys_link"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:27 2020",
+ "timestampMillis": "1590105687155",
+ "status": {
+  "cmdId": "cf1f5116-3938-4d9e-a5cf-f7ba39c88797",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:45 2020",
+ "timestampMillis": "1590105705243",
+ "status": {
+  "cmdId": "cf1f5116-3938-4d9e-a5cf-f7ba39c88797",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 20:01:45 2020",
+ "timestampMillis": "1590105705253",
+ "buildStep": {
+  "cmdId": "75fceed0-1b99-4b3e-8ae6-e7efa500072e",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/ld443/meng_project/SysArray8_new/_x/link/int/sdsl.dat -rtd /home/ld443/meng_project/SysArray8_new/_x/link/int/cf2sw.rtd -xclbin /home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.xml -o /home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/cf2sw.rtd",
+   "-xclbin",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:45 2020",
+ "timestampMillis": "1590105705254",
+ "status": {
+  "cmdId": "75fceed0-1b99-4b3e-8ae6-e7efa500072e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:47 2020",
+ "timestampMillis": "1590105707397",
+ "status": {
+  "cmdId": "75fceed0-1b99-4b3e-8ae6-e7efa500072e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 20:01:47 2020",
+ "timestampMillis": "1590105707410",
+ "buildStep": {
+  "cmdId": "63ae4f8a-08e3-40c9-b711-afc9b86ef55c",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram --rtdJsonFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/cf2sw.rtd --diagramJsonFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModel.json --platformFilePath /opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm --generatedByName v++ --generatedByVersion 2019.2.1 --generatedByChangeList 2729669 --generatedByTimeStamp Thu Dec  5 04:48:12 MST 2019 --generatedByOptions /opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw -lo SysArray.xclbin SysArray.xo --platform xilinx_u250_xdma_201830_2 -k SysArray --kernel_frequency 255  --generatedByXclbinName SysArray --kernelInfoDataFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat",
+  "args": [
+   "--rtdJsonFileName",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/cf2sw.rtd",
+   "--diagramJsonFileName",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModel.json",
+   "--platformFilePath",
+   "/opt/xilinx/platforms/xilinx_u250_xdma_201830_2/xilinx_u250_xdma_201830_2.xpfm",
+   "--generatedByName",
+   "v++",
+   "--generatedByVersion",
+   "2019.2.1",
+   "--generatedByChangeList",
+   "2729669",
+   "--generatedByTimeStamp",
+   "Thu Dec  5 04:48:12 MST 2019",
+   "--generatedByOptions",
+   "/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/unwrapped/lnx64.o/v++ -t hw -lo SysArray.xclbin SysArray.xo --platform xilinx_u250_xdma_201830_2 -k SysArray --kernel_frequency 255 ",
+   "--generatedByXclbinName",
+   "SysArray",
+   "--kernelInfoDataFileName",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:47 2020",
+ "timestampMillis": "1590105707411",
+ "status": {
+  "cmdId": "63ae4f8a-08e3-40c9-b711-afc9b86ef55c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 20:01:49 2020",
+ "timestampMillis": "1590105709767",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:49 2020",
+ "timestampMillis": "1590105709791",
+ "status": {
+  "cmdId": "63ae4f8a-08e3-40c9-b711-afc9b86ef55c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 20:01:49 2020",
+ "timestampMillis": "1590105709810",
+ "buildStep": {
+  "cmdId": "34151584-6e1d-4f58-a57b-0a96369ec9f4",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u250_xdma_201830_2 --kernel_frequency 255 --output_dir /home/ld443/meng_project/SysArray8_new/_x/link/int --log_dir /home/ld443/meng_project/SysArray8_new/_x/logs/link --report_dir /home/ld443/meng_project/SysArray8_new/_x/reports/link --config /home/ld443/meng_project/SysArray8_new/_x/link/int/vplConfig.ini -k /home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ld443/meng_project/SysArray8_new/_x/link --no-info --tlog_dir /home/ld443/meng_project/SysArray8_new/_x/.tlog/v++_link_SysArray --iprepo /home/ld443/meng_project/SysArray8_new/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0 --messageDb /home/ld443/meng_project/SysArray8_new/_x/link/run_link/vpl.pb /home/ld443/meng_project/SysArray8_new/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u250_xdma_201830_2",
+   "--kernel_frequency",
+   "255",
+   "--output_dir",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int",
+   "--log_dir",
+   "/home/ld443/meng_project/SysArray8_new/_x/logs/link",
+   "--report_dir",
+   "/home/ld443/meng_project/SysArray8_new/_x/reports/link",
+   "--config",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/ld443/meng_project/SysArray8_new/_x/link",
+   "--no-info",
+   "--tlog_dir",
+   "/home/ld443/meng_project/SysArray8_new/_x/.tlog/v++_link_SysArray",
+   "--iprepo",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0",
+   "--messageDb",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/run_link/vpl.pb",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:49 2020",
+ "timestampMillis": "1590105709811",
+ "status": {
+  "cmdId": "34151584-6e1d-4f58-a57b-0a96369ec9f4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu May 21 20:01:51 2020",
+ "timestampMillis": "1590105711946",
+ "buildStep": {
+  "cmdId": "9a921b55-93f6-4d99-86fa-1cae43e610ce",
+  "name": "vpl",
+  "logFile": "/home/ld443/meng_project/SysArray8_new/_x/link/link.steps.log",
+  "commandLine": "/opt/xilinx/Xilinx_Vivado_vitis_2019.2/Vitis/2019.2/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_xdma_201830_2 --kernel_frequency 255 --output_dir /home/ld443/meng_project/SysArray8_new/_x/link/int --log_dir /home/ld443/meng_project/SysArray8_new/_x/logs/link --report_dir /home/ld443/meng_project/SysArray8_new/_x/reports/link --config /home/ld443/meng_project/SysArray8_new/_x/link/int/vplConfig.ini -k /home/ld443/meng_project/SysArray8_new/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ld443/meng_project/SysArray8_new/_x/link --no-info --tlog_dir /home/ld443/meng_project/SysArray8_new/_x/.tlog/v++_link_SysArray --iprepo /home/ld443/meng_project/SysArray8_new/_x/link/int/xo/ip_repo/mycompany_com_kernel_SysArray_1_0 --messageDb /home/ld443/meng_project/SysArray8_new/_x/link/run_link/vpl.pb /home/ld443/meng_project/SysArray8_new/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:01:51 2020",
+ "timestampMillis": "1590105711946",
+ "status": {
+  "cmdId": "9a921b55-93f6-4d99-86fa-1cae43e610ce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 20:02:32 2020",
+ "timestampMillis": "1590105752942",
+ "buildStep": {
+  "cmdId": "4be71c07-2d83-4582-9fce-d01508b3b199",
+  "name": "vivado",
+  "logFile": "/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 20:02:32 2020",
+ "timestampMillis": "1590105752944",
+ "status": {
+  "cmdId": "4be71c07-2d83-4582-9fce-d01508b3b199",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 21:17:01 2020",
+ "timestampMillis": "1590110221538",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/output/systemDiagramModel_synthed.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 22:10:41 2020",
+ "timestampMillis": "1590113441562",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/output/systemDiagramModel_placed.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:00:01 2020",
+ "timestampMillis": "1590116401518",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/link/vivado/vpl/output/systemDiagramModel_routed.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:20 2020",
+ "timestampMillis": "1590117500590",
+ "status": {
+  "cmdId": "4be71c07-2d83-4582-9fce-d01508b3b199",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:21 2020",
+ "timestampMillis": "1590117501761",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:21 2020",
+ "timestampMillis": "1590117501770",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:21 2020",
+ "timestampMillis": "1590117501775",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:21 2020",
+ "timestampMillis": "1590117501779",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:21 2020",
+ "timestampMillis": "1590117501784",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502100",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel2_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502104",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_cdc_data_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502109",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_gpio_null_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502114",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_user_slrcrossing_si_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502119",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_regslice_data_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502124",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_vip_data_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502128",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_user_slrcrossing_mi_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502133",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_cdc_data_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502138",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel2_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502143",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502148",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_data_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502153",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_data_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502157",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_control_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502162",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_regslice_data_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502166",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel2_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502171",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_cdc_data_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502176",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502180",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_control_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502185",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_SysArray_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502189",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_xbar_6_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502193",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502198",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_data_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502202",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_control_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502207",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_regslice_data_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502211",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_regslice_control_mgntpf_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502215",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_freq_counter_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502220",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_vip_ctrl_userpf_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502225",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_axi_cdc_data_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502229",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_memory_subsystem_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502234",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_regslice_periph_null_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502238",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_logic_reset_op_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502243",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_debug_bridge_xsdbm_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502248",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_xbar_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502252",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_xbar_5_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502257",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_regslice_data_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502262",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_control_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502266",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_data_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502271",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502276",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_psreset_gate_pr_kernel2_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502281",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_xbar_4_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502285",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_ebbe_xsdbm_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502290",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_ebbe_lut_buffer_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502295",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_psr_ddr4_mem00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502299",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_ddr4_mem00_ctrl_cc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502304",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_calib_reduce_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502308",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_psr_ctrl_interconnect_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502313",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_interconnect_ddrmem_ctrl_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502317",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_vip_DDR4_MEM00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502322",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_vip_ui_clk_DDR4_MEM00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502326",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_s00_regslice_21_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502331",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_vip_S00_AXI_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502336",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_vip_S04_AXI_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502340",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_ddr4_mem00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502345",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_interconnect_DDR4_MEM00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502350",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_psr_aclk_SLR0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502354",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_m00_regslice_10_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502359",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_s00_regslice_18_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502364",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_m01_regslice_8_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502368",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/pfm_dynamic_auto_cc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502373",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_vip_ui_rst_DDR4_MEM00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502378",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/syn/bd_d216_vip_ctrl_DDR4_MEM00_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:22 2020",
+ "timestampMillis": "1590117502440",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/imp/xilinx_u250_xdma_201830_2_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:30 2020",
+ "timestampMillis": "1590117510351",
+ "status": {
+  "cmdId": "9a921b55-93f6-4d99-86fa-1cae43e610ce",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:30 2020",
+ "timestampMillis": "1590117510393",
+ "status": {
+  "cmdId": "34151584-6e1d-4f58-a57b-0a96369ec9f4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 23:18:30 2020",
+ "timestampMillis": "1590117510416",
+ "buildStep": {
+  "cmdId": "1b493881-b017-4977-b186-254725b1847e",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:30 2020",
+ "timestampMillis": "1590117510418",
+ "status": {
+  "cmdId": "1b493881-b017-4977-b186-254725b1847e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:30 2020",
+ "timestampMillis": "1590117510448",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 23:18:30 2020",
+ "timestampMillis": "1590117510479",
+ "buildStep": {
+  "cmdId": "c25fcc8a-5b75-42f5-b23a-757d22e91de2",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/ld443/meng_project/SysArray8_new/_x/link/int/address_map.xml -sdsl /home/ld443/meng_project/SysArray8_new/_x/link/int/sdsl.dat -xclbin /home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.xml -rtd /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd -o /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xml",
+  "args": [
+   "-a",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd",
+   "-o",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xml"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:30 2020",
+ "timestampMillis": "1590117510481",
+ "status": {
+  "cmdId": "c25fcc8a-5b75-42f5-b23a-757d22e91de2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:32 2020",
+ "timestampMillis": "1590117512445",
+ "status": {
+  "cmdId": "c25fcc8a-5b75-42f5-b23a-757d22e91de2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 23:18:32 2020",
+ "timestampMillis": "1590117512450",
+ "buildStep": {
+  "cmdId": "8e9b7e7f-5c5b-4d08-86c8-410901860444",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram --rtdJsonFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd --diagramJsonFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModel_resource_use.json --diagramWithAddressesAndSlrsJsonFileName /home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "args": [
+   "--rtdJsonFileName",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd",
+   "--diagramJsonFileName",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModel_resource_use.json",
+   "--diagramWithAddressesAndSlrsJsonFileName",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:32 2020",
+ "timestampMillis": "1590117512452",
+ "status": {
+  "cmdId": "8e9b7e7f-5c5b-4d08-86c8-410901860444",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514478",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514490",
+ "status": {
+  "cmdId": "8e9b7e7f-5c5b-4d08-86c8-410901860444",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514504",
+ "status": {
+  "cmdId": "1b493881-b017-4977-b186-254725b1847e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514512",
+ "buildStep": {
+  "cmdId": "a27bea5d-4142-436d-ba2c-d9e7761836a6",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section DEBUG_IP_LAYOUT:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/debug_ip_layout.rtd --add-section BITSTREAM:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/partial.bit --force --key-value SYS:mode:hw_pr --add-section :JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd --append-section :JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_xml.rtd --add-section BUILD_METADATA:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xml --add-section SYSTEM_METADATA:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModelSlrBaseAddress.json --output /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin",
+  "args": [
+   "--add-section",
+   "DEBUG_IP_LAYOUT:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/debug_ip_layout.rtd",
+   "--add-section",
+   "BITSTREAM:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/partial.bit",
+   "--force",
+   "--key-value",
+   "SYS:mode:hw_pr",
+   "--add-section",
+   ":JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.rtd",
+   "--append-section",
+   ":JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/ld443/meng_project/SysArray8_new/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--output",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514514",
+ "status": {
+  "cmdId": "a27bea5d-4142-436d-ba2c-d9e7761836a6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514767",
+ "status": {
+  "cmdId": "a27bea5d-4142-436d-ba2c-d9e7761836a6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514775",
+ "buildStep": {
+  "cmdId": "2b75f183-d2d4-4c99-a913-87c5122a4edd",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --info /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin.info --input /home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin.info",
+   "--input",
+   "/home/ld443/meng_project/SysArray8_new/_x/link/int/SysArray.xclbin"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:34 2020",
+ "timestampMillis": "1590117514776",
+ "status": {
+  "cmdId": "2b75f183-d2d4-4c99-a913-87c5122a4edd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:35 2020",
+ "timestampMillis": "1590117515553",
+ "status": {
+  "cmdId": "2b75f183-d2d4-4c99-a913-87c5122a4edd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:35 2020",
+ "timestampMillis": "1590117515573",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/system_estimate_SysArray.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:40 2020",
+ "timestampMillis": "1590117520923",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/reports/link/v++_link_SysArray_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:40 2020",
+ "timestampMillis": "1590117520924",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/v++_link_SysArray_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu May 21 23:18:41 2020",
+ "timestampMillis": "1590117521171",
+ "report": {
+  "path": "/home/ld443/meng_project/SysArray8_new/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu May 21 23:18:41 2020",
+ "timestampMillis": "1590117521180",
+ "status": {
+  "cmdId": "f0fc6589-9582-43d0-9354-dca61907370e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
